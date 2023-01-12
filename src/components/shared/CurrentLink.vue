@@ -1,10 +1,10 @@
 <template>
   <section class="my-5">
     <h3 class="text-lg font-medium leading-6 text-gray-900 dark:text-gray-300">
-      CBLink #: <span class="text-purple-600">{{ currentCount }}</span>
+      CBLink #: <span class="text-sky-600">{{ currentCount }}</span>
     </h3>
     <p class="max-w-2xl text-sm text-gray-500">
-      Make sure that you <a href="/page/help" class="text-purple-600">
+      Make sure that you <a href="/page/help" class="text-sky-600">
         read the latest</a> guidence before adding links or creating a directory.
     </p>
   </section>

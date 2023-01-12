@@ -1,20 +1,18 @@
 <template>
   <div class="relative border-b border-gray-200 dark:border-gray-900 pb-5">
-
     <LoginButtons />
+   
 
-    <div class="mt-4">
-
-      <div class="sm:hidden mt-4">
+      <div class="sm:hidden mt-5">
         <label for="current-tab" class="sr-only">Select a tab</label>
         <select id="current-tab" name="current-tab"
-          class="block w-full rounded-md border-gray-300 dark:border-gray-700 py-2 pl-3 pr-10 text-base focus:border-purple-500 focus:outline-none focus:ring-purple-500 sm:text-sm">
+          class="block w-full rounded-md border-gray-300 dark:border-gray-700 py-2 pl-3 pr-10 text-base focus:border-sky-500 focus:outline-none focus:ring-sky-500 sm:text-sm">
           <option v-for="tab in tabs" :key="tab.name" :selected="tab.current">
             {{ tab.name }}
           </option>
         </select>
       </div>
-      <div class="hidden sm:block">
+      <div class="hidden sm:block mt-5">
         <nav class="-mb-px flex space-x-8 ml-5">
           <a v-for="tab in tabs" :key="tab.name" :href="tab.href" :class="[
             tab.current
@@ -24,8 +22,7 @@
           ]" :aria-current="tab.current ? 'page' : undefined">{{ tab.name }}</a>
         </nav>
       </div>
-      
-    </div>
+
   </div>
 </template>
 
@@ -42,12 +39,10 @@ const isCurrent = (c) => {
 const tabs = [
   { name: "Home", href: "/", current: isCurrent("/") },
   { name: "Admin", href: "/admin", current: isCurrent("/admin") },
-  { name: "Submit Link", href: "/suggest", current: isCurrent("/suggest") },
-  {
-    name: "Get A Directory",
-    href: "/user/register",
-    current: isCurrent("/user/register"),
-  },
   { name: "About", href: "/page/about", current: isCurrent("/page/about") },
+  { name: "Help", href: "/page/help" },
+  { name: "SignUp", href: "/user/register" },
+  { name: "Login", href: "/user/login" },
+
 ];
 </script>

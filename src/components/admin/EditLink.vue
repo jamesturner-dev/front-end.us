@@ -94,7 +94,7 @@ onMounted(() => {
   {{ selectedLink }}
   <section class="mb-5">
     <div v-if="toggleLinkChosen"
-      class="cursor-pointer inline-block flex-shrink-0 rounded-full bg-purple-100 text-purple-800 dark:bg-purple-800 dark:text-purple-100 px-3 pt-1 pb-1 text-sm font-medium mx-2 hover:bg-purple-500 hover:text-white hover:dark:bg-purple-700">
+      class="cursor-pointer inline-block flex-shrink-0 rounded-full bg-sky-100 text-sky-800 dark:bg-sky-800 dark:text-sky-100 px-3 pt-1 pb-1 text-sm font-medium mx-2 hover:bg-sky-500 hover:text-white hover:dark:bg-sky-700">
       You are editing link:
       <span class="text-black font-bold">{{ selectedLink }}</span>
     </div>
@@ -117,7 +117,7 @@ onMounted(() => {
       </dd>
 
       <button type="button" @click="chooseLink"
-        class="rounded-md bg-white dark:bg-gray-900 px-1 py-0.5 font-medium text-purple-600 hover:bg-purple-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2">
+        class="rounded-md bg-white dark:bg-gray-900 px-1 py-0.5 font-medium text-sky-600 hover:bg-sky-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2">
         Choose Link
       </button>
 
@@ -183,12 +183,12 @@ onMounted(() => {
             </span>
             <span class="pt-3 ml-4 flex flex-shrink-0 items-start space-x-4">
               <button type="button" @click="fireLogger"
-                class="rounded-md bg-white dark:bg-opacity-10 px-1 py-0.5 font-medium text-purple-600 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2">
+                class="rounded-md bg-white dark:bg-opacity-10 px-1 py-0.5 font-medium text-sky-600 hover:text-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2">
                 Update
               </button>
               <span class="text-gray-300" aria-hidden="true">|</span>
               <button type="button"
-                class="rounded-md bg-white dark:bg-opacity-10 px-1 py-0.5 font-medium text-purple-600 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2">
+                class="rounded-md bg-white dark:bg-opacity-10 px-1 py-0.5 font-medium text-sky-600 hover:text-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2">
                 Remove
               </button>
             </span>
@@ -199,7 +199,7 @@ onMounted(() => {
       </dl>
       <div class="mt-10 grid content-center mx-10">
         <button type="button"
-          class="w-50 mx-10 rounded-md border-2 px-2 py-1 mb-5 border-purple-600 font-medium text-purple-600 hover:border-white hover:bg-purple-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
+          class="w-50 mx-10 rounded-md border-2 px-2 py-1 mb-5 border-sky-600 font-medium text-sky-600 hover:border-white hover:bg-sky-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
           v-on:click.prevent="handleEdit()">
           Edit CBLink
         </button>

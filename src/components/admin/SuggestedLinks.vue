@@ -63,7 +63,7 @@ onMounted(() => {
         <a class="p-2" :href="link.longUrl">{{ link.title }}</a> - &nbsp;
         {{ link.description }}
         <span
-          class="ml-3 cursor-pointer inline-block flex-shrink-0 rounded-full bg-purple-100 text-purple-800 dark:bg-purple-800 dark:text-purple-100 px-2 pt-0.5 pb-1 text-xs font-medium mr-2 hover:bg-purple-500 hover:text-white hover:dark:bg-purple-700">
+          class="ml-3 cursor-pointer inline-block flex-shrink-0 rounded-full bg-sky-100 text-sky-800 dark:bg-sky-800 dark:text-sky-100 px-2 pt-0.5 pb-1 text-xs font-medium mr-2 hover:bg-sky-500 hover:text-white hover:dark:bg-sky-700">
           <a @click="deleteLink(link._id)"> Delete: {{ link._id }} </a>
         </span>
       </li>

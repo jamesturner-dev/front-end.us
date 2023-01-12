@@ -1,6 +1,6 @@
 <template>
  <h3 class="m-5 ml-3 capitalize text-gray-500">
-    {{ content[0] }}: <span class="text-purple-700">
+    {{ content[0] }}: <span class="text-sky-700">
       {{ content[1] }}
     </span>
   </h3>

@@ -183,7 +183,7 @@ onMounted(() => {
         <dd class="pt-3 flex text-sm text-gray-900 sm:col-span-2 sm:mt-0">
           <span class="flex-grow">
             <select id="selected-tab" name="selected-tab" v-model="currentCat" on-change="fireLogger()"
-              class="mt-1 block w-full rounded-md cblink-input border-2 bg-white border-gray-300 dark:bg-black dark:bg-opacity-95 dark:border-gray-800 dark:text-gray-600 py-2 pl-3 pr-10 text-base focus:border-purple-500 focus:outline-none focus:ring-purple-500 sm:text-sm">
+              class="mt-1 block w-full rounded-md cblink-input border-2 bg-white border-gray-300 dark:bg-black dark:bg-opacity-95 dark:border-gray-800 dark:text-gray-600 py-2 pl-3 pr-10 text-base focus:border-sky-500 focus:outline-none focus:ring-sky-500 sm:text-sm">
               <option v-for="cat in cats" :key="cat">
                 {{ cat }}
               </option>
@@ -202,12 +202,12 @@ onMounted(() => {
           </span>
           <span class="pt-3 ml-4 flex flex-shrink-0 items-start space-x-4">
             <button type="button" @click="fireLogger"
-              class="rounded-md bg-white dark:bg-opacity-10 px-1 py-0.5 font-medium text-purple-600 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2">
+              class="rounded-md bg-white dark:bg-opacity-10 px-1 py-0.5 font-medium text-sky-600 hover:text-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2">
               Update
             </button>
             <span class="text-gray-300" aria-hidden="true">|</span>
             <button type="button"
-              class="rounded-md bg-white dark:bg-opacity-10 px-1 py-0.5 font-medium text-purple-600 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2">
+              class="rounded-md bg-white dark:bg-opacity-10 px-1 py-0.5 font-medium text-sky-600 hover:text-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2">
               Remove
             </button>
           </span>
@@ -217,8 +217,8 @@ onMounted(() => {
         <SwitchLabel as="dt" class="text-sm font-medium text-gray-500" passive>Show Similar and Related</SwitchLabel>
         <dd class="mt-1 flex text-sm text-gray-900 sm:col-span-2 sm:mt-0">
           <Switch v-model="similarAndRelated" :class="[
-            similarAndRelated ? 'bg-purple-600' : 'bg-gray-200',
-            'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 sm:ml-auto',
+            similarAndRelated ? 'bg-sky-600' : 'bg-gray-200',
+            'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 sm:ml-auto',
           ]">
             <span aria-hidden="true" :class="[
               similarAndRelated ? 'translate-x-5' : 'translate-x-0',
@@ -245,7 +245,7 @@ onMounted(() => {
     </dl>
     <div class="mt-10 grid content-center mx-10">
       <button type="button"
-        class="w-50 mx-10 rounded-md border-2 px-2 py-1 mb-5 border-purple-600 font-medium text-purple-600 hover:border-white hover:bg-purple-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
+        class="w-50 mx-10 rounded-md border-2 px-2 py-1 mb-5 border-sky-600 font-medium text-sky-600 hover:border-white hover:bg-sky-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
         v-on:click.prevent="handleSubmit()">
         Create New CBLink
       </button>

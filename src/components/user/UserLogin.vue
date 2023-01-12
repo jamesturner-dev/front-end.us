@@ -8,7 +8,7 @@
         <p class="mt-2 cbMore">
           Or
           {{ " " }}
-          <a href="/user/register" class="font-medium text-violet-800 hover:text-purple-500">
+          <a href="/user/register" class="font-medium text-violet-800 hover:text-sky-500">
             sign up today to create a directory
           </a>
         </p>
@@ -19,14 +19,14 @@
           <div>
             <label for="email-address" class="sr-only">Email address</label>
             <input id="email-address" v-model="email" name="email" type="email" autocomplete="email" required=""
-              class="dark:bg-black dark:border-gray-900 relative mb-1 block w-full appearance-none rounded-none rounded-t-md border border-neutral-300 px-3 py-2 text-gray-900 placeholder-neutral-500 focus:z-10 focus:border-purple-500 focus:outline-none focus:ring-purple-500 sm:text-sm"
+              class="dark:bg-black dark:border-gray-900 relative mb-1 block w-full appearance-none rounded-none rounded-t-md border border-neutral-300 px-3 py-2 text-gray-900 placeholder-neutral-500 focus:z-10 focus:border-sky-500 focus:outline-none focus:ring-sky-500 sm:text-sm"
               placeholder="Email address" />
           </div>
           <div>
             <label for="password" class="sr-only">Password</label>
             <input id="password" v-model="password" name="password" type="password" autocomplete="current-password"
               required=""
-              class="dark:bg-black dark:border-gray-900 relative block w-full appearance-none rounded-none rounded-b-md border border-neutral-300 px-3 py-2 text-gray-900 placeholder-neutral-500 focus:z-10 focus:border-purple-500 focus:outline-none focus:ring-purple-500 sm:text-sm"
+              class="dark:bg-black dark:border-gray-900 relative block w-full appearance-none rounded-none rounded-b-md border border-neutral-300 px-3 py-2 text-gray-900 placeholder-neutral-500 focus:z-10 focus:border-sky-500 focus:outline-none focus:ring-sky-500 sm:text-sm"
               placeholder="Password" />
           </div>
         </div>
@@ -38,7 +38,7 @@
 
         <div>
           <button @click="login" type="submit"
-            class="group relative flex w-full justify-center rounded-md border border-transparent bg-violet-700 bg-opacity-75 py-2 px-4 text-sm font-medium text-white hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2">
+            class="group relative flex w-full justify-center rounded-md border border-transparent bg-violet-700 bg-opacity-75 py-2 px-4 text-sm font-medium text-white hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2">
             <span class="absolute inset-y-0 left-0 flex items-center pl-3">
             </span>
             Sign in

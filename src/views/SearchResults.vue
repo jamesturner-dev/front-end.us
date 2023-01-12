@@ -7,19 +7,19 @@
       <li v-for="(link, i) in returnedLinks" :key="i" class="py-4 ml-3">
 
         <p class="cbP dark:text-gray-600">
-          <a :href="link.longUrl" class="text-xl hover:text-purple-600 textLink">
+          <a :href="link.longUrl" class="text-xl hover:text-sky-600 textLink">
             {{ link.title }}
           </a>
         </p>
         <p class="cbSub">
           <a :href="getURL(link.category)">
             Filed under:
-            <span class="text-purple-600">{{ link.category }}</span>
+            <span class="text-sky-600">{{ link.category }}</span>
           </a>
           &nbsp; . &nbsp;
           Created on {{ link.createdAt.slice(0, 10) }}
           &nbsp; . &nbsp; Rated:
-          <span class="text-purple-600">
+          <span class="text-sky-600">
             {{ link.rating }}
           </span>
         </p>
