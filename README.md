@@ -36,3 +36,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ### Todo List
 
 - Change out all script to script setup
+- Finish creating custom CSS
+- Add tests
+- Add documentation
