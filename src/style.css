@@ -46,7 +46,7 @@ a.grayLink {
 }
 
 a.grayLink:hover {
-  color: var(--darker-gray);
+  color: var(--blu);
   opacity: 1;
 }
 
@@ -55,6 +55,10 @@ h1,h2,h3,h4,h5,h6 {
   color: var(--darker-gray);
   line-height: 2rem;
   letter-spacing: -0.025em;
+}
+
+h1:hover{
+  color: var(--blu);
 }
 
 .theContainer {
@@ -222,12 +226,12 @@ h1,h2,h3,h4,h5,h6 {
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5rem;
-  color: rgb(17 24 39);
+  color: rgb(156 163 175);
 }
 
 .secondary:hover {
-  background-color: rgb(233 213 255);
-  color: var(--blu);
+  background-color: var(--grene);
+  color: #fff;
 }
 
 .cbSelect {

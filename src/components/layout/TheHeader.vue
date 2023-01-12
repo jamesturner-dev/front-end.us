@@ -8,8 +8,9 @@
           </a>
           <div>
             <h1 class="text-xl -mb-1">
-              <a :href="siteInfo.url" class="hover:text-black">{{ siteInfo.subTitle }}</a>
-              <a :href="siteInfo.url" class="grayLink">&nbsp;{{ siteInfo.title }}</a>
+              <a :href="siteInfo.url" class="subTitle">
+              {{ siteInfo.subTitle }}&nbsp;{{ siteInfo.title }}
+              </a>
             </h1>
             <a class="grayLink" :href="siteInfo.repository">
               <span class="text-xs">{{ siteInfo.aText }}</span>

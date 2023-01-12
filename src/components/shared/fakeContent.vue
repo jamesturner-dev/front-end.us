@@ -1,10 +1,10 @@
 <template>
 	<div class="mx-auto max-w-3xl pt-10 pb-20">
 		<div class="hidden sm:mb-8 sm:flex sm:justify-center">
-			<div class="fakeButton ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+			<div class="fakeButton ring-1 ring-gray-900/10 dark:ring-gray-800 dark:hover:ring-gray-600 hover:ring-gray-900/20">
 				<span class="text-gray-600">
-					Why Start Your Next Frontend From Scratch?
-					<a href="#" class="font-semibold text-sky-600">
+					{{ c.heading }}
+					<a :href="c.link" class="font-semibold text-sky-600">
 						<span class="absolute inset-0" aria-hidden="true" />
 						Read more <span aria-hidden="true">&rarr;
 						</span>
@@ -12,17 +12,17 @@
 				</span>
 			</div>
 		</div>
-		<h1 class="text-4xl sm:text-center"> {{ content.title }} </h1>
+		<h1 class="text-3xl sm:text-center"> {{ c.title }} </h1>
 		<p class="mt-6 text-lg leading-6 text-gray-600 sm:text-center">
-			{{ content.description }}
+			{{ c.description }}
 		</p>
 		<div class="mt-8 flex gap-x-4 sm:justify-center">
-			<a href="#" class="primary shadow-sm ring-1 ring-sky-500 hover:ring-emerald-500">
-				Get the Code{{ ' ' }}
+			<a :href="c.primary.link" class="primary shadow-sm ring-1 ring-sky-500 hover:ring-emerald-500">
+				{{ c.primary.text }} {{ ' ' }}
 				<span class="text-sky-200" aria-hidden="true">&rarr;</span>
 			</a>
-			<a href="#" class="secondary ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-				Continue Demo{{ ' ' }}
+			<a :href="c.secondary.link" class="secondary ring-1 ring-gray-900/10 hover:ring-gray-900/20 dark:ring-gray-800 dark:hover:ring-gray-600 ">
+				{{ c.secondary.text }} {{ ' ' }}
 				<span class="text-gray-400" aria-hidden="true">&rarr;</span>
 			</a>
 		</div>
@@ -31,26 +31,21 @@
 
 <script setup>
 import { ref } from 'vue';
-const content = { 
+const c = ref(
+	{ 
 	title: 'Views, components, layouts, and utilities for building your next frontend.',
 	description: 'I found myself building the same frontend components over and over again. So I decided to build a frontend library or template that I can use to bootstrap my projects more efficinently.',
-	button: {
+	heading: 'Why Start Your Next Frontend From Scratch?',
+	link: '/page/about',
 		primary: {
 			text: 'Get the Code',
 			link: '#',
-			icon: 'arrow-right',
-			color: 'sky',
-			ring: 'sky',
-			hover: 'emerald'
 		},
 		secondary: {
 			text: 'Continue Demo',
 			link: '#',
-			icon: 'arrow-right',
-			color: 'gray',
-			ring: 'gray',
-			hover: 'gray'
 		}
 	}
- }
+ 
+)
 </script>

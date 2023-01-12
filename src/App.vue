@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-full dark:bg-opacity-95">
+  <div class="min-h-full">
     <SearchForm />
     <main class="flex-1 relative mx-auto max-w-4xl mt-5">
       <div class="theContainer">
