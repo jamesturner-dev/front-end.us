@@ -1,6 +1,6 @@
 <template>
-  <div class="mt-12 md:mt-0">
-    <h3 class="text-sm font-medium text-gray-400">Categories:</h3>
+  <div class="">
+    <h3 class="text-sm font-medium text-gray-400">Navigation:</h3>
     <ul role="list" class="mt-4 space-y-4">
       <li v-for="item in categories" :key="item.name">
         <a :href="item.href"
@@ -14,9 +14,9 @@
 
 <script setup>
 const categories =  [
-    { name: "Technology", href: "/cat/technology" },
-    { name: "News Services", href: "/cat/news" },
-    { name: "Online Services", href: "/cat/services" },
-    { name: "Podcasts", href: "/cat/podcast" },
+    { name: "Home Page", href: "/" },
+    { name: "About This", href: "/page/about" },
+    { name: "Help Page", href: "/page/help" },
+    { name: "Contact Me", href: "https://jamesturner.dev/page/contact" },
   ];
 </script>

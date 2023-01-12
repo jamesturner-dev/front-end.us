@@ -1,12 +1,13 @@
 <template>
-  <div class="pb-10 pl-5 xl:grid xl:grid-cols-4 xl:gap-8 footer-links">
+  <div class="pb-10 pl-10 xl:grid xl:grid-cols-4 xl:gap-8 footer-links">
     <div class="grid grid-cols-2 gap-8 xl:col-span-4">
       <div class="md:grid md:grid-cols-2 md:gap-8">
-        <FooterImage />
         <FooterCategories />
+        <FooterInternal />
+        
       </div>
       <div class="md:grid md:grid-cols-2 md:gap-8">
-        <FooterInternal />
+        <FooterNews />
         <FooterExternal />
       </div>
     </div>
@@ -14,7 +15,7 @@
 </template>
 
 <script setup>
-import FooterImage from "./FooterImage.vue";
+import FooterNews from "./FooterNews.vue";
 import FooterCategories from "./FooterCategories.vue";
 import FooterInternal from "./FooterInternal.vue";
 import FooterExternal from "./FooterExternal.vue";

@@ -8,13 +8,11 @@
           </a>
           <div>
             <h1 class="text-xl -mb-1">
-              <a :href="siteInfo.url" class="hover:text-black">
-                {{ siteInfo.subTitle }}
-              </a>
+              <a :href="siteInfo.url" class="hover:text-black">{{ siteInfo.subTitle }}</a>
               <a :href="siteInfo.url" class="grayLink">&nbsp;{{ siteInfo.title }}</a>
             </h1>
             <a class="grayLink" :href="siteInfo.repository">
-              <span class="text-xs">(The Github Repository is Here)</span>
+              <span class="text-xs">{{ siteInfo.aText }}</span>
             </a>
           </div>
         </div>
@@ -41,7 +39,8 @@ const siteInfo = ref(
     subTitle: "James Turner Dev's",
     title: 'Front-End.us',
     url: '/',
-    repository: 'https://github.com/jamesturner-dev/front-end.us'
+    repository: 'https://github.com/jamesturner-dev/front-end.us',
+    aText: '(The Github Repository is Here)'
   }
 );
 </script>

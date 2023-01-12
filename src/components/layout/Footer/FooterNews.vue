@@ -1,6 +1,6 @@
 <template>
   <section class="">
-    <h3 class="text-sm font-medium text-gray-400">Categories:</h3>
+    <h3 class="text-sm font-medium text-gray-400">Latest News:</h3>
     <ul role="list" class="mt-4 space-y-4">
       <li v-for="item in categories" :key="item.name">
         <a :href="item.href"
@@ -14,9 +14,9 @@
 
 <script setup>
 const categories =  [
-    { name: "Technology", href: "/cat/technology" },
-    { name: "News Services", href: "/cat/news" },
-    { name: "Online Services", href: "/cat/services" },
-    { name: "Podcasts", href: "/cat/podcast" },
+    { name: "Technology", href: "https://headlin3s.com/categories/Tech" },
+    { name: "The News", href: "https://headlin3s.com/categories/News" },
+    { name: "Online Video", href: "https://linkz.network/tag/video" },
+    { name: "Software", href: "https://linkz.network/cat/software" },
   ];
 </script>
