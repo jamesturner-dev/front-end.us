@@ -1,27 +1,27 @@
 <template>
-  <div
-    class="p-5 border-t border-gray-200 dark:border-gray-900 md:flex md:items-center md:justify-between">
+  <div class="p-5 border-t border-gray-200 dark:border-gray-900 md:flex md:items-center md:justify-between">
     <div class="flex space-x-6 md:order-2">
-      <a v-for="item in social"
-        :key="item.name"
-        :href="item.href"
-        class="text-gray-400 hover:text-gray-500">
+      <a v-for="item in social" :key="item.name" :href="item.href" class="text-gray-400 hover:text-gray-500">
         <span class="sr-only">{{ item.name }}</span>
         <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
       </a>
     </div>
     <p class="mt-8 text-sm text-gray-500 md:mt-0 md:order-1 py-2">
-      &copy; 2023
-      <a class="text-sky-500" href="https://jamesturner.dev/">
-        JamesTurnerDev
-      </a>
-      - Some rights reserved.
+      &copy; {{ info.year }}
+      <a class="text-sky-500 hover:text-emerald-500" :href="info.link">
+        {{ info.name }}
+      </a> - Some rights reserved.
     </p>
   </div>
 </template>
 
 <script setup>
-import { defineComponent, h } from "vue";
+import { defineComponent, h, ref } from "vue";
+const info = ref({
+  name: "JamesTurnerDev",
+  link: "https://jamesturner.dev/",
+  year: new Date().getFullYear(),
+});
 const social = [
   {
     name: "Twitter",

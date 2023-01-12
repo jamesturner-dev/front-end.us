@@ -1,54 +1,102 @@
-<script setup>
-import PageHeader from './PageHeader.vue';
-const content = [
-  "About Salty Ape's cb.link",
-  "What is this all about then?"
-];
-</script>
-
 <template>
-  <div class="relative overflow-hidden p-5">
-    <div class="mx-auto max-w-prose text-lg">
+  <div class="relative overflow-hidden">
+    <div class="mx-auto py-5">
 
       <PageHeader :content="content" />
 
-      <p class="mt-10 text-xl leading-8 text-gray-500">
-        Not too long ago I got fired from my job. <span class="text-sky-700">
-          Without cause</span>. The worst part about it was that I could not continue
-        working on the project I was the sole developer on. You know, it was
-        <span class="text-sky-700">my</span> project.
-      </p>
-      <p class="text-gray-600 font-bold mt-10 text-xl">
-        Not legally of course, so I had to let it go.
-      </p>
-      <p class="text-gray-500 dark:gray-300 mt-5">
-        I had a couple of projects I had started before that gig, one being
-        <a class="text-sky-700" href="https://headlin3s.com">
-          Headlin3s </a> but I wanted to create something new and fresh - the
-        way I wanted to do it. I also wanted to create something that I could
-        get posted before my severance ran out as a resume piece.
-      </p>
-      <p class="text-gray-500 mt-5">
-        I decided to create a system to track all the links from my various
-        web projects. I decided to go ahead and implement a short url type of
-        scheme, and then I thought why not create some directory type views of
-        the links?
-      </p>
-      <h2 class="text-gray-600 font-bold mb-5 mt-10 text-xl">
-        It would be cooler if it was multi-user
-      </h2>
-      <p class="text-gray-500">
-        It still felt a little flimsy so I thought - why not make it multi
-        user so other people could use it to create their own directory and
-        manage their own links?
-      </p>
-      <p class="text-gray-500 my-5">
-        If nothing else it does show how I approach a full stack project. You can
-        <a class="text-sky-700" href="https://github.com/jamesturner-dev/cb">
-          read more about it here as well as check out the code itself
-        </a>.
-      </p>
+      <div class="mx-auto sm:py-10">
+        
+        <blockquote class="mb-20">
+          <div class="mx-auto max-w-3xl text-center text-2xl font-medium leading-7 text-gray-700">
+            <p>&ldquo;What can I do to get new web projects started as quickly as possible?  Make a template...&rdquo;</p>
+          </div>
+          <footer class="mt-8">
+            <div class="md:flex md:items-center md:justify-center">
+              <div class="md:flex-shrink-0">
+                <img class="mx-auto h-10 w-10 rounded-full" 
+                  src="https://imagedelivery.net/jUv0WjkQAcJxE0kRYIap3Q/fc4278f6-502a-422e-c16a-00b47d53d900/public"
+                  alt="" />
+              </div>
+              <div class="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
+                <div class="text-base font-medium text-gray-600">James Turner</div>
+
+                <svg class="mx-1 hidden h-3 w-3 text-sky-400 md:block" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M11 0h3L9 20H6l5-20z" />
+                </svg>
+
+                <div class="text-base font-medium text-gray-500">James Turner Dev</div>
+              </div>
+            </div>
+          </footer>
+        </blockquote>
+     
+     
+          <dl class="md:grid md:grid-cols-2 md:grid-rows-2 md:gap-x-8 md:gap-y-5 md:space-y-0 md:px-5">
+            <div v-for="faq in faqs" :key="faq.id" class="space-y-2">
+              <dt class="text-lg font-medium leading-6 text-gray-900 mt-5">{{ faq.question }}</dt>
+              <dd class="text-base text-gray-500">{{ faq.answer }}</dd>
+              <dd v-if="faq.link" class="text-base text-gray-500">
+                <a :href="faq.link" class="text-sky-400 hover:text-emerald-500">Learn more</a>
+              </dd>
+            </div>
+          </dl>
+      
+      </div>
 
     </div>
   </div>
 </template>
+
+<script setup>
+import PageHeader from './PageHeader.vue';
+const faqs = [
+  {
+    id: 1,
+    question: "Why do you use Vue.js",
+    answer: "Vue has a small learning curve and is easier to pick up for newcomers to front-end development. That said, it is also powerful enough to be used for large-scale front-end's while remaining performant.",
+    link: 'https://jamesturner.dev/blog/why-vue',
+  },
+  {
+    id: 2,
+    question: 'Why did you make this?',
+    answer: 'Everytime I start a new project I find myself looking for the same components. I wanted to create a bare bones template that I could use to bootstrap every new project I start..',
+  },
+  {
+    id: 3,
+    question: 'Can anyone use it?',
+    answer: "Yes, it's open source and free to use. If you want to make a contribution, please do! Just fork the repo and submit a pull request.",
+    link: 'https://github.com/jamesturner-dev/front-end.us',
+  },
+  {
+    id: 4,
+    question: 'Wait, wait I have more questions!',
+    answer: 'Click on over to the Help page and I will do my best to answer your questions.',
+    link: '/page/help',
+  },
+
+]
+const content = [
+  "About Front-End.us",
+  "What is this all about then?"
+];
+const testimonials = [
+  {
+    id: 1,
+    quote:
+      'My order arrived super quickly. The product is even better than I hoped it would be. Very happy customer over here!',
+    attribution: 'Sarah Peters, New Orleans',
+  },
+  {
+    id: 2,
+    quote:
+      'I had to return a purchase that didn’t fit. The whole process was so simple that I ended up ordering two new items!',
+    attribution: 'Kelly McPherson, Chicago',
+  },
+  {
+    id: 3,
+    quote:
+      'Now that I’m on holiday for the summer, I’ll probably order a few more shirts. It’s just so convenient, and I know the quality will always be there.',
+    attribution: 'Chris Paul, Phoenix',
+  },
+]
+</script>

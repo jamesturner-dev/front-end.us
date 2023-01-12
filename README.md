@@ -1,4 +1,4 @@
-## Front-End.us   : 0.1.0
+## Front-End.us   : 0.1.1
 ##### [https://front-end.us/](https://front-end.us)
 
 ##### Front-End.us is a frontend template that I use to bootstrap my projects.  It is built with the following technologies:
