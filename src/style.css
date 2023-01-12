@@ -18,6 +18,7 @@
   --grene-hover: rgb(114, 200, 118);
   --darker-gray: rgb(82, 93, 109);
   --mid-gray: rgb(107 114 128);
+  --light-gray: rgb(166, 166, 166);
 }
 
 body {
@@ -37,6 +38,16 @@ a.link {
 
 a.link:hover {
   color: var(--blu-hover);
+}
+
+a.grayLink {
+  color: var(--mid-gray);
+  opacity: 0.7;
+}
+
+a.grayLink:hover {
+  color: var(--darker-gray);
+  opacity: 1;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -111,17 +122,32 @@ h1,h2,h3,h4,h5,h6 {
   background-color: rgb(0,0,0);
 }
 
-.cbWrap {
+.formInput {
+  display: block;
+  position: relative;
+  margin-bottom: 0.25rem;
+  width: 100%;
+  border: 1px solid #dadbdc;
+  border-radius: 0.33rem;
+  padding: .5rem .75rem;
+  color: rgb(41, 41, 41);
+  background-color: rgb(255 255 255);
+}
+
+.dark .formInput {
+  color: var(--light-gray);
+  background-color: rgb(0,0,0);
+  border-color: #1c1c1c;
+}
+ 
+
+.theWrapper{
   display: flex;
   min-height: 100%;
   align-items: center;
   justify-content: center;
-  padding-left: 1.25rem
-    /* 20px */
-  ;
-  padding-right: 1.25rem
-    /* 20px */
-  ;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .cblink-input {
@@ -213,48 +239,34 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .cbP {
-  font-size: 0.875rem
-    /* 14px */
-  ;
-  line-height: 1.25rem
-    /* 20px */
-  ;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   font-weight: 500;
   color: rgb(17 24 39);
 }
 
 .cbSub {
-  font-size: 0.75rem
-    /* 12px */
-  ;
-  line-height: 1rem
-    /* 16px */
-  ;
+  font-size: 0.75rem;
+  line-height: 1rem;
   color: rgb(156 163 175);
 }
 
-.cbHeader {
+.theHeading {
+  margin-top: 2px;;
   text-align: center;
-  font-size: 1.875rem
-    /* 30px */
-  ;
-  line-height: 2.25rem
-    /* 36px */
-  ;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
   font-weight: 700;
   letter-spacing: -0.025em;
   color: rgb(107 114 128);
 }
 
-.cbMore {
+.more {
+  margin-top: .25rem;
   text-align: center;
-  font-size: 0.875rem
-    /* 14px */
-  ;
-  line-height: 1.25rem
-    /* 20px */
-  ;
-  color: rgb(75 85 99);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--light-gray);
 }
 
 .toggleSwitch {
@@ -290,8 +302,6 @@ h1,h2,h3,h4,h5,h6 {
   color: var(--grene)!important;
   background-color: rgb(22, 22, 22);
 }
-
-
 
 .fakeButton {
   position: relative;

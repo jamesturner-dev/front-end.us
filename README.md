@@ -10,3 +10,28 @@
 I found myself building the same frontend components over and over again. So I decided to build a frontend   template that I can use to bootstrap my projects more efficinently.  I decided to open source it so that others can benefit from it as well.  I hope you enjoy it.
 
 I will be adding more components as I build them.  If you have any suggestions, please feel free to open an issue or submit a pull request.
+
+### Installation
+
+```bash
+npm install
+```
+
+### Usage
+
+```bash
+npm run dev
+```
+
+### Build
+
+```bash
+npm run build
+```
+
+### License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+### Todo List
+
+- Change out all script to script setup

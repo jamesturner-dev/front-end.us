@@ -2,14 +2,14 @@
   <div class="flex min-h-full items-center justify-center px-5">
     <div class="w-full max-w-md space-y-8">
       <div>
-        <h2 class="mt-6 cbHeader">
+        <h2 class="mt-6 theHeading">
           Sign in to your account
         </h2>
-        <p class="mt-2 cbMore">
+        <p class="more">
           Or
           {{ " " }}
-          <a href="/user/register" class="font-medium text-violet-800 hover:text-sky-500">
-            sign up today to create a directory
+          <a href="/user/register" class="font-medium text-emerald-400 hover:text-sky-400">
+            sign up today to get started.
           </a>
         </p>
       </div>
@@ -38,7 +38,7 @@
 
         <div>
           <button @click="login" type="submit"
-            class="group relative flex w-full justify-center rounded-md border border-transparent bg-violet-700 bg-opacity-75 py-2 px-4 text-sm font-medium text-white hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2">
+            class="primary w-full">
             <span class="absolute inset-y-0 left-0 flex items-center pl-3">
             </span>
             Sign in
