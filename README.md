@@ -1,9 +1,8 @@
-## Technor471   : 0.1.0
+## Front-End.us   : 0.1.0
 
-#### I'm not quite ready to write a backend in Go, but I'm getting there. 
+- Vue3
+- TailwindCSS
 
-That being said I recognize that I need to create a backend for my day to day use.  
+I found myself building the same frontend components over and over again. So I decided to build a frontend   template that I can use to bootstrap my projects more efficinently.  I decided to go ahead and open source it so that others can benefit from it as well.  I hope you enjoy it.
 
-This Node / Express / MongoDb framework that I created is really good, so I am going to use it for my own devices.  First of which is a secure, encrypted online file manager.  Sure there are plenty of third party services I could use but I do not want to use them, I want to use the one that I create, host, maintain, etc.
-
-So I am going to back up a bit and write this backend using Node.  Will I re-write it in Go?  Time will tell.
+I will be adding more components as I build them.  If you have any suggestions, please feel free to open an issue or submit a pull request.
