@@ -30,6 +30,7 @@ npm run build
 ```
 
 ### License
+Copyright 2023 [James Turner Dev](https://james-turner.dev)
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 ### Todo List
