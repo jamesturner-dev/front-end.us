@@ -2,9 +2,8 @@
   <div class="theWrapper">
     <div class="w-full max-w-md space-y-10">
 
-      <h2 class="mt-5 text-center text-2xl font-bold tracking-tight text-gray-500">
-        Register a new account
-      </h2>
+      <PageHeader :content="content" />
+      
 
       <form @submit.prevent="" class="mt-8 space-y-6">
         <input type="hidden" name="remember" value="true" />
@@ -50,6 +49,9 @@
 
 <script>
 import MemberLink from "./MemberLink.vue";
+import PageHeader from "../page/PageHeader.vue";
+
+
 export default {
   data: function () {
     return {
@@ -60,14 +62,14 @@ export default {
       confirmPassword: "",
       token: "",
       freeSpotsRemaing: null,
+      content: {
+        heading: "New User Sign Up",
+        subHeading: "Please use this form to create an account.",
+      }
     };
   },
 
-  components: { MemberLink },
-
-  mounted() {
-
-  },
+  components: { MemberLink, PageHeader },
 
   methods: {
 

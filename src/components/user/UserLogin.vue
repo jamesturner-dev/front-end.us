@@ -2,12 +2,8 @@
   <div class="theWrapper">
     <div class="w-full max-w-md space-y-8">
       <div>
-        <h2 class="mt-6 theHeading">
-          Sign in to your account
-        </h2>
-        <p class="more">
-          Or
-          {{ " " }}
+        <h2 class="mt-6 theHeading"> Sign in to your account </h2>
+        <p class="more"> Or {{ " " }}
           <a href="/user/register" class="font-medium text-emerald-400 hover:text-sky-400">
             sign up today to get started.
           </a>
@@ -19,14 +15,14 @@
           <div>
             <label for="email-address" class="sr-only">Email address</label>
             <input id="email-address" v-model="email" name="email" type="email" autocomplete="email" required=""
-              class="dark:bg-black dark:border-gray-900 relative mb-1 block w-full appearance-none rounded-none rounded-t-md border border-neutral-300 px-3 py-2 text-gray-900 placeholder-neutral-500 focus:z-10 focus:border-sky-500 focus:outline-none focus:ring-sky-500 sm:text-sm"
+              class="formInput focus:z-10 focus:border-sky-500 focus:outline-none focus:ring-sky-500 sm:text-sm"
               placeholder="Email address" />
           </div>
           <div>
             <label for="password" class="sr-only">Password</label>
             <input id="password" v-model="password" name="password" type="password" autocomplete="current-password"
               required=""
-              class="dark:bg-black dark:border-gray-900 relative block w-full appearance-none rounded-none rounded-b-md border border-neutral-300 px-3 py-2 text-gray-900 placeholder-neutral-500 focus:z-10 focus:border-sky-500 focus:outline-none focus:ring-sky-500 sm:text-sm"
+              class="formInput focus:z-10 focus:border-sky-500 focus:outline-none focus:ring-sky-500 sm:text-sm"
               placeholder="Password" />
           </div>
         </div>
@@ -37,8 +33,7 @@
         </div>
 
         <div>
-          <button @click="login" type="submit"
-            class="primary w-full">
+          <button @click="login" type="submit" class="primary w-full">
             <span class="absolute inset-y-0 left-0 flex items-center pl-3">
             </span>
             Sign in
@@ -59,6 +54,10 @@ export default {
       email: "",
       password: "",
       token: "",
+      content: {
+        heading: "Sign in to your account",
+        subHeading: "Please use this form to create an account.",
+      }
     };
   },
   props: ["tags"],

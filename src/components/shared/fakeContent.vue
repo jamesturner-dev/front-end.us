@@ -5,7 +5,7 @@
 				class="fakeButton ring-1 ring-gray-900/10 dark:ring-gray-800 dark:hover:ring-gray-600 hover:ring-gray-900/20">
 				<span class="text-gray-600">
 					{{ c.heading }}
-					<a :href="c.link"  class="font-semibold text-sky-600">
+					<a :href="c.link"  class="font-semibold primaryText">
 						<span class="absolute inset-0" aria-hidden="true" />
 						Read more <span aria-hidden="true">&rarr;
 						</span>

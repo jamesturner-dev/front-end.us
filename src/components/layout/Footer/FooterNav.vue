@@ -8,7 +8,7 @@
     </div>
     <p class="mt-8 text-sm text-gray-500 md:mt-0 md:order-1 py-2">
       &copy; {{ info.year }}
-      <a class="text-sky-500 hover:text-emerald-500" :href="info.link">
+      <a class="primaryText hover:text-emerald-500" :href="info.link">
         {{ info.name }}
       </a> - Some rights reserved.
     </p>

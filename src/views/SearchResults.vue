@@ -1,32 +1,22 @@
 <template>
   <section>
-
     <ContentHeader :content="[`${returnedLinks.length} results returned for`, searchTerm]" />
-
     <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-800">
-      <li v-for="(link, i) in returnedLinks" :key="i" class="py-4 ml-3">
-
-        <p class="cbP dark:text-gray-600">
-          <a :href="link.longUrl" class="text-xl hover:text-sky-600 textLink">
+      <li v-for="(link, i) in returnedLinks" :key="i">
+        <p class="theContent">
+          <a :href="link.longUrl" class="text-xl primaryText textLink">
             {{ link.title }}
           </a>
         </p>
-        <p class="cbSub">
-          <a :href="getURL(link.category)">
-            Filed under:
-            <span class="text-sky-600">{{ link.category }}</span>
+        <div class="theContent">
+          <a :href="getURL(link.category)"> Filed under:
+            <span class="primaryText">{{ link.category }}</span>
           </a>
-          &nbsp; . &nbsp;
-          Created on {{ link.createdAt.slice(0, 10) }}
+          &nbsp; . &nbsp; Created on {{ link.createdAt.slice(0, 10) }}
           &nbsp; . &nbsp; Rated:
-          <span class="text-sky-600">
-            {{ link.rating }}
-          </span>
-        </p>
-        <p class="text-sm text-gray-500 dark:text-gray-300">
-          {{ link.description }}
-        </p>
-
+          <span class="primaryText">{{ link.rating }}</span>
+        </div>
+        <p class="secondaryText">{{ link.description }}</p>
       </li>
     </ul>
   </section>
@@ -47,8 +37,9 @@ const content =
     subHeading: `${returnedLinks.length} results returned for ${searchTerm}`
   };
 
-//** how I do search usually - pass the search term to this page via route params.  I am Leaving it here */
-//** so I can impliment quickly if needed - shouldn't hurt anything - if you delete - delete the route too*/
+//** This how I do site search usually - pass the search term to this page via route params.  
+//** I am Leaving it here so I can impliment quickly if needed - shouldn't hurt anything 
+//** - if you delete - delete the route too */
 
 // const getSearchedLinks = async () => {
 //   const requestOptions = {
@@ -67,8 +58,8 @@ const content =
 //   const data = await response.json();
 
 //   if (data.count != 0) {
-//     const _lyst = data.data;
-//     _lyst.forEach((item) => {
+//     const lst = data.data;
+//     _lst.forEach((item) => {
 //       returnedLinks.value.push(item);
 //     });
 //   }

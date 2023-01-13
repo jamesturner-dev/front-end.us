@@ -16,9 +16,10 @@
   --blu-hover: rgb(14 165 233);
   --grene: rgb(132, 200, 135);
   --grene-hover: rgb(114, 200, 118);
-  --darker-gray: rgb(82, 93, 109);
+  --darker-gray: rgb(75 85 99);
   --mid-gray: rgb(107 114 128);
   --light-gray: rgb(166, 166, 166);
+  
 }
 
 body {
@@ -137,7 +138,7 @@ h1:hover{
 .formInput {
   display: block;
   position: relative;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
   width: 100%;
   border: 1px solid #dadbdc;
   border-radius: 0.33rem;
@@ -219,6 +220,10 @@ h1:hover{
   color: rgb(255 255 255);
 }
 
+.primaryText {
+  color: var(--blu)!important;
+}
+
 .secondary {
   display: inline-block;
   border-radius: 0.5rem;
@@ -237,7 +242,13 @@ h1:hover{
   border: transparent;
 }
 
-.cbSelect {
+.secondaryText {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--mid-gray);
+}
+
+.selectList {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   border-radius: 0.375rem;
@@ -245,17 +256,12 @@ h1:hover{
   border-color: rgb(229 231 235);
 }
 
-.cbP {
+.theContent {
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 500;
-  color: rgb(17 24 39);
-}
-
-.cbSub {
-  font-size: 0.75rem;
-  line-height: 1rem;
-  color: rgb(156 163 175);
+  color: var(--darker-gray);
+          
 }
 
 .theHeading {
