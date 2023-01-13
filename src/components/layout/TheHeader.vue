@@ -1,5 +1,6 @@
 <template>
   <section>
+    <!-- All these Flexes look a little cumbersome, but it's how the logo, title, and switch are aligned -->
     <div class="flex">
       <div class="flex-1">
         <div class="flex">

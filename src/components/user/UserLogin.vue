@@ -1,5 +1,5 @@
 <template>
-  <div class="flex min-h-full items-center justify-center px-5">
+  <div class="theWrapper">
     <div class="w-full max-w-md space-y-8">
       <div>
         <h2 class="mt-6 theHeading">

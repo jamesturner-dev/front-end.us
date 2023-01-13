@@ -4,7 +4,7 @@
       Go back home
     </a>
     <a href="/page/help"
-      class="bigButton secondary hover:bg-sky-200 focus:ring-2 focus:ring-sky-800 focus:ring-offset-2">
+      class="bigButton secondary focus:ring-2 focus:ring-sky-800 focus:ring-offset-2">
       Get Some Help
     </a>
   </div>

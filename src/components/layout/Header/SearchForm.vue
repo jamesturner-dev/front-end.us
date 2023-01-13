@@ -9,7 +9,7 @@
           </div>
           <input name="headerSearch" id="searchInput"
             class="placeholder-gray-300 dark:placeholder-gray-800 focus:outline-none focus:ring-0 sm:block"
-            placeholder="Search cb.link" v-model="searchTerm" @keyup.enter="siteSearch" type="search" />
+            placeholder="Search Site" v-model="searchTerm" @keyup.enter="siteSearch" type="search" />
         </div>
       </form>
       <div class="mx-5 flex items-center">

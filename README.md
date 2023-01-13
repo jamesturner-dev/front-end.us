@@ -39,3 +39,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Finish creating custom CSS
 - Add tests
 - Add documentation
+- Fix the current page in the menu?
+- 

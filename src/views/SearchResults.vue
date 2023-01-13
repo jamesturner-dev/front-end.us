@@ -1,7 +1,7 @@
 <template>
   <section>
 
-    <ResultsHeader :content="[`${returnedLinks.length} results returned for`, searchTerm]" />
+    <ContentHeader :content="[`${returnedLinks.length} results returned for`, searchTerm]" />
 
     <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-800">
       <li v-for="(link, i) in returnedLinks" :key="i" class="py-4 ml-3">
@@ -35,49 +35,56 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import { useRoute } from "vue-router";
-import ResultsHeader from "../components/shared/ResultsHeader.vue";
+import ContentHeader from "../components/shared/ContentHeader.vue";
 
 const route = useRoute();
 const searchTerm = route.params.searchTerm; // (it is reactive)
 const returnedLinks = ref([]);
-const content = [];
 
-const getSearchedLinks = async () => {
-  const requestOptions = {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      searchTerm: searchTerm,
-    }),
+const content =
+  {
+    heading: searchTerm,
+    subHeading: `${returnedLinks.length} results returned for ${searchTerm}`
   };
 
-  const response = await fetch(
-    "http://localhost:5000/api/v1/search",
-    requestOptions
-  );
+//** how I do search usually - pass the search term to this page via route params.  I am Leaving it here */
+//** so I can impliment quickly if needed - shouldn't hurt anything - if you delete - delete the route too*/
 
-  const data = await response.json();
+// const getSearchedLinks = async () => {
+//   const requestOptions = {
+//     method: "POST",
+//     headers: { "Content-Type": "application/json" },
+//     body: JSON.stringify({
+//       searchTerm: searchTerm,
+//     }),
+//   };
 
-  if (data.count != 0) {
-    const _lyst = data.data;
-    _lyst.forEach((item) => {
-      returnedLinks.value.push(item);
-    });
-  }
+//   const response = await fetch(
+//     "http://localhost:5000/api/v1/search",
+//     requestOptions
+//   );
 
-};
+//   const data = await response.json();
 
-const getURL = (id) => {
-  return `/cat/${id}`;
-};
+//   if (data.count != 0) {
+//     const _lyst = data.data;
+//     _lyst.forEach((item) => {
+//       returnedLinks.value.push(item);
+//     });
+//   }
 
+// };
+
+// const getURL = (id) => {
+//   return `/cat/${id}`;
+// };
 
 
 onMounted(() => {
-  try {
-    getSearchedLinks();
-  } catch (error) {
-    console.log(error);
-  }
+  // try {
+  //   getSearchedLinks();
+  // } catch (error) {
+  //   console.log(error);
+  // }
 });
 </script>

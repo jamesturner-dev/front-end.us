@@ -1,5 +1,5 @@
 <template>
-  <div class="flex min-h-full items-center justify-center py-12 px-5">
+  <div class="mainFlex">
     <div class="w-full max-w-md space-y-4">
       <section v-if="pageName == 'login'">
         <UserLogin />
