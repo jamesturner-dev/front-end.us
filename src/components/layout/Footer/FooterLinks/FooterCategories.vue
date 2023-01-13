@@ -1,6 +1,6 @@
 <template>
-  <div class="">
-    <h3 class="text-sm font-medium text-gray-400">Navigation:</h3>
+  <div class="footerWrapper">
+    <h3> Navigation: </h3>
     <ul role="list" class="mt-4 space-y-4">
       <li v-for="item in categories" :key="item.name">
         <a :href="item.href" class="footerItem">

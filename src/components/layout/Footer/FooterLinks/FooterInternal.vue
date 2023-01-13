@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-12 md:mt-0">
+  <div class="mt-12 md:mt-0 footerWrapper">
     <h3 class="text-sm font-medium text-gray-400">Users:</h3>
     <ul role="list" class="mt-4 space-y-4">
       <li v-for="item in users" :key="item.name">
