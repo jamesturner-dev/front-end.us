@@ -31,9 +31,7 @@ npm run dev
 npm run build
 ```
 
-### License
-Copyright 2023 [James Turner Dev](https://james-turner.dev)
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
 
 ### Todo List
 
@@ -42,4 +40,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Add tests
 - Add documentation
 - Fix the current page in the menu?
-- 
+
+### License
+Copyright 2023 [James Turner Dev](https://james-turner.dev)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
