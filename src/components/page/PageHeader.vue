@@ -1,9 +1,9 @@
 <template>
  <h1>
-    <span class="block text-center text-lg font-semibold text-sky-500">
+    <span class="block text-center text-sm font-semibold text-sky-500">
       {{ content[0] }}
     </span>
-    <span class="mb-2 block text-center text-3xl font-bold leading-8 tracking-tight text-gray-700">
+    <span class="mb-2 block text-center text-2xl font-bold leading-8 tracking-tight text-gray-500">
       {{ content[1] }}
     </span>
   </h1>

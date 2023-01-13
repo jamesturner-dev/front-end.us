@@ -27,40 +27,40 @@
 </template>
 
 <script>
-export default {
-  data: function () {
-    return {
-      errors: [],
-      email: "",
-      password: "",
-      token: "",
-    };
-  },
+// export default {
+//   data: function () {
+//     return {
+//       errors: [],
+//       email: "",
+//       password: "",
+//       token: "",
+//     };
+//   },
 
-  methods: {
-    async login() {
-      const requestOptions = {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          email: this.email,
-          password: this.password,
-        }),
-      };
+//   methods: {
+//     async login() {
+//       const requestOptions = {
+//         method: "POST",
+//         headers: { "Content-Type": "application/json" },
+//         body: JSON.stringify({
+//           email: this.email,
+//           password: this.password,
+//         }),
+//       };
 
-      const response = await fetch(
-        "http://localhost:5000/api/v1/auth/forgotpassword",
-        requestOptions
-      );
+//       const response = await fetch(
+//         "http://localhost:5000/api/v1/auth/forgotpassword",
+//         requestOptions
+//       );
 
-      const data = await response.json();
-      this.token = data.token;
-      console.log(this.token);
-      // localStorage.setItem("token", this.token);
-      if (this.token) {
-        this.$router.push({ name: "home" });
-      }
-    },
-  },
-};
+//       const data = await response.json();
+//       this.token = data.token;
+//       console.log(this.token);
+//       // localStorage.setItem("token", this.token);
+//       if (this.token) {
+//         this.$router.push({ name: "home" });
+//       }
+//     },
+//   },
+// };
 </script>

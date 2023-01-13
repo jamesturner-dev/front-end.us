@@ -10,7 +10,7 @@ import HelpQuestions from './HelpQuestions.vue';
 import PageHeader from './PageHeader.vue';
 const content = [
   "Click on the question to reveal the answer", 
-  "cb.link Help Page"
+  "Front-End.us Q & A"
 ];
 </script>
 

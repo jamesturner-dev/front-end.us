@@ -39,11 +39,10 @@ const isCurrent = (c) => {
 
 const tabs = [
   { name: "Home", href: "/", current: isCurrent("/") },
-  { name: "Admin", href: "/admin", current: isCurrent("/admin") },
-  { name: "About", href: "/page/about", current: isCurrent("/page/about") },
-  { name: "Help", href: "/page/help" },
-  { name: "SignUp", href: "/user/register" },
-  { name: "Login", href: "/user/login" },
+  { name: "About", href: "/page/about", current: isCurrent("Page") },
+  { name: "Help", href: "/page/help", current: isCurrent("/page/help") },
+  { name: "SignUp", href: "/user/register", current: isCurrent("/page/help") },
+  { name: "Login", href: "/user/login", current: isCurrent("/page/help") },
 
 ];
 </script>
