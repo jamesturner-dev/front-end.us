@@ -7,7 +7,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: auto;
-  src: 
+  src:
     url('~@/assets/fonts/JetBrainsMono-VariableFont_wght.ttf') format('font-truetype');
 }
 
@@ -52,18 +52,28 @@ a.grayLink:hover {
   opacity: 1;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   color: var(--darker-gray);
   line-height: 2rem;
   letter-spacing: -0.025em;
 }
 
-.dark h1,h2,h3,h4,h5,h6 {
+.dark h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--light-gray)
 }
 
-h1:hover{
+h1:hover {
   color: var(--blu);
 }
 
@@ -125,6 +135,17 @@ h1:hover{
   color: #fff;
 }
 
+.footerWrapper h3 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: var(--light-gray);
+}
+
+.dark .footerWrapper h3 {
+  color: #1c1c1c !important;
+}
+
 .stickySearch {
   position: sticky;
   display: flex;
@@ -153,7 +174,7 @@ h1:hover{
 
 .dark #searchInput {
   color: rgb(75 85 99);
-  background-color: rgb(0,0,0);
+  background-color: rgb(0, 0, 0);
 }
 
 .formInput {
@@ -170,11 +191,11 @@ h1:hover{
 
 .dark .formInput {
   color: var(--light-gray);
-  background-color: rgb(0,0,0);
+  background-color: rgb(0, 0, 0);
   border-color: #1c1c1c;
 }
- 
-.theWrapper{
+
+.theWrapper {
   display: flex;
   min-height: 100%;
   align-items: center;
@@ -242,7 +263,7 @@ h1:hover{
 }
 
 .primaryText {
-  color: var(--blu)!important;
+  color: var(--blu) !important;
 }
 
 .secondary {
@@ -282,13 +303,12 @@ h1:hover{
   line-height: 1.25rem;
   font-weight: 500;
   color: var(--darker-gray);
-          
 }
 
 /* Header Stuff */
 
 .theHeading {
-  margin-top: 2px;;
+  margin-top: 2px;
   text-align: center;
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -307,7 +327,6 @@ h1:hover{
   border-bottom: 2px solid var(--darker-gray);
 }
 
-
 .toggleSwitch {
   display: inline-block;
   height: 1rem;
@@ -320,25 +339,25 @@ h1:hover{
   background-color: rgb(0, 0, 0);
 }
 
-.searchSubmit{
+.searchSubmit {
   border-radius: 9999px;
   background-color: rgb(243 244 246);
   padding: 0.25rem;
   color: rgb(156 163 175);
 }
 
-.searchSubmit:hover{
+.searchSubmit:hover {
   background-color: rgb(243 244 246);
   color: rgb(107 114 128);
 }
 
-.dark .searchSubmit{
-  color: var(--blu)!important;
+.dark .searchSubmit {
+  color: var(--blu) !important;
   background-color: rgb(17 24 39);
 }
 
-.dark .searchSubmit:hover{
-  color: var(--grene)!important;
+.dark .searchSubmit:hover {
+  color: var(--grene) !important;
   background-color: rgb(22, 22, 22);
 }
 
