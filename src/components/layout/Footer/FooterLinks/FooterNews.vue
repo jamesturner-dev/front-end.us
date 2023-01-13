@@ -1,10 +1,11 @@
 <template>
   <section class="">
-    <h3 class="text-sm font-medium text-gray-400">Latest News:</h3>
+    <h3 class="text-sm font-medium text-gray-400">
+      Latest News:
+    </h3>
     <ul role="list" class="mt-4 space-y-4">
       <li v-for="item in categories" :key="item.name">
-        <a :href="item.href"
-          class="px-2 text-sm dark:text-gray-400 dark:hover:text-white text-gray-500 hover:text-gray-900">
+        <a :href="item.href" class="footerItem">
           {{ item.name }}
         </a>
       </li>
@@ -19,4 +20,4 @@ const categories =  [
     { name: "Online Video", href: "https://linkz.network/tag/video" },
     { name: "Software", href: "https://linkz.network/cat/software" },
   ];
-</script>
+</script> 

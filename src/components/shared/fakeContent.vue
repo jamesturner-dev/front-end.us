@@ -47,7 +47,7 @@ const c = ref(
 		},
 		secondary: {
 			text: 'Continue Demo',
-			link: '#',
+			link: '/page/about',
 		}
 	}
 

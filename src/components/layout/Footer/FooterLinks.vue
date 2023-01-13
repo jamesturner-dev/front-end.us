@@ -4,7 +4,6 @@
       <div class="md:grid md:grid-cols-2 md:gap-8">
         <FooterCategories />
         <FooterInternal />
-        
       </div>
       <div class="md:grid md:grid-cols-2 md:gap-8">
         <FooterNews />
@@ -15,8 +14,8 @@
 </template>
 
 <script setup>
-import FooterNews from "./FooterNews.vue";
-import FooterCategories from "./FooterCategories.vue";
-import FooterInternal from "./FooterInternal.vue";
-import FooterExternal from "./FooterExternal.vue";
+import FooterNews from "./FooterLinks/FooterNews.vue";
+import FooterCategories from "./FooterLinks/FooterCategories.vue";
+import FooterInternal from "./FooterLinks/FooterInternal.vue";
+import FooterExternal from "./FooterLinks/FooterExternal.vue";
 </script>

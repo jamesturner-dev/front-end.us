@@ -16,10 +16,11 @@
   --blu-hover: rgb(14 165 233);
   --grene: rgb(132, 200, 135);
   --grene-hover: rgb(114, 200, 118);
-  --darker-gray: rgb(75 85 99);
-  --mid-gray: rgb(107 114 128);
+  --darker-gray: rgb(33, 33, 33);
+  --dark-gray: rgb(99, 99, 99);
+  --mid-gray: rgb(138, 138, 138);
   --light-gray: rgb(166, 166, 166);
-  
+  --lighter-gray: rgb(199, 199, 199);
 }
 
 body {
@@ -56,6 +57,10 @@ h1,h2,h3,h4,h5,h6 {
   color: var(--darker-gray);
   line-height: 2rem;
   letter-spacing: -0.025em;
+}
+
+.dark h1,h2,h3,h4,h5,h6 {
+  color: var(--light-gray)
 }
 
 h1:hover{
@@ -102,6 +107,22 @@ h1:hover{
 
 .dark .footerContain {
   background-color: rgb(0, 0, 0);
+}
+
+.footerItem {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--mid-gray);
+}
+
+.footerItem:hover {
+  color: #000;
+}
+
+.dark .footerItem:hover {
+  color: #fff;
 }
 
 .stickySearch {
@@ -264,6 +285,8 @@ h1:hover{
           
 }
 
+/* Header Stuff */
+
 .theHeading {
   margin-top: 2px;;
   text-align: center;
@@ -274,13 +297,16 @@ h1:hover{
   color: rgb(107 114 128);
 }
 
-.more {
-  margin-top: .25rem;
-  text-align: center;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  color: var(--light-gray);
+#headerMenu {
+  position: relative;
+  border-bottom: 1px solid var(--lighter-gray);
+  padding-bottom: 1.25rem;
 }
+
+.dark #headerMenu {
+  border-bottom: 2px solid var(--darker-gray);
+}
+
 
 .toggleSwitch {
   display: inline-block;
@@ -323,4 +349,12 @@ h1:hover{
   padding: .375rem 1rem;
   font-size: 0.875rem;
   line-height: 1.5rem;
+}
+
+.more {
+  margin-top: .25rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--light-gray);
 }
