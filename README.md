@@ -13,6 +13,8 @@ I found myself building the same frontend components over and over again. So I d
 
 I will be adding more components as I build them.  If you have any suggestions, please feel free to open an issue or submit a pull request.
 
+![darkmode](darkmode.webp)
+
 ### Installation
 
 ```bash
