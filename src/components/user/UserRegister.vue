@@ -38,7 +38,7 @@
 
         <MemberLink :login=false />
 
-        <button @click="register" type="submit" class="primary w-full">
+        <button @click="register" type="submit" class="primary w-full" aria-label="Register">
           Register
         </button>
 

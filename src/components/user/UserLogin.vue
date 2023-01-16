@@ -33,7 +33,7 @@
         </div>
 
         <div>
-          <button @click="login" type="submit" class="primary w-full">
+          <button @click="login" type="submit" class="primary w-full" aria-label="Login">
             <span class="absolute inset-y-0 left-0 flex items-center pl-3">
             </span>
             Sign in

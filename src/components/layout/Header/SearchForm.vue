@@ -13,7 +13,7 @@
         </div>
       </form>
       <div class="mx-5 flex items-center">
-        <button type="submit"
+        <button type="submit" aria-label="Search Submit"
           class="searchSubmit focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-0">
           <ChevronDoubleRightIcon @click="siteSearch" class="h-3 w-3" aria-hidden="true" />
         </button>

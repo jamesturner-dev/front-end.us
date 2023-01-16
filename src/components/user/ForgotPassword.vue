@@ -17,7 +17,7 @@
             class="formInput focus:z-10 focus:border-sky-500"
             placeholder="Email address" />
         </div>
-        <button @click="login" type="submit" class="primary w-full">
+        <button @click="login" type="submit" class="primary w-full" aria-label="Sign In">
           Sign in
         </button>
       </form>
