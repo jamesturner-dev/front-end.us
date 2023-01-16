@@ -35,8 +35,10 @@ npm run build
 ```
 
 ### More Help and information
-There is a question and answer section on the site.  You can also open an issue on the repo.
+There is a question and answer section on the site: 
 [Front-End.us Help](https://front-end.us/page/help)
+
+You can also open an issue on the repo.
 
 ### Todo List
 
