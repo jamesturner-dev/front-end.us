@@ -251,8 +251,8 @@ h1:hover {
   color: rgb(255 255 255);
   display: inline-block;
   border-radius: 0.5rem;
-  padding: 6px 1rem;
-  font-size: 1rem;
+  padding: 5px 1rem;
+  font-size: .9rem;
   line-height: 1.5rem;
   font-weight: 600;
 }
@@ -270,8 +270,8 @@ h1:hover {
   display: inline-block;
   border-radius: 0.5rem;
   border-radius: 0.5rem;
-  padding: 6px 1rem;
-  font-size: 1rem;
+  padding: 5px 1rem;
+  font-size: .9rem;
   font-weight: 600;
   line-height: 1.5rem;
   color: rgb(156 163 175);
