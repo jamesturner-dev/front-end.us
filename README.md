@@ -1,7 +1,7 @@
 ## Front-End.us   : 0.1.2
 ##### [https://front-end.us/](https://front-end.us)
 
-##### Front-End.us is a frontend template that I use to bootstrap my projects.  It is built with the following technologies:
+##### Front-End.us is a repository that I use to bootstrap my projects.  It is built with the following technologies:
 
 - [Vite](https://vitejs.dev/)
 - [Vue3](https://v3.vuejs.org/)
