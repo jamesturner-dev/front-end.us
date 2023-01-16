@@ -17,7 +17,7 @@
 import { ref } from "vue";
 import SocialLinks from "./FooterLinks/SocialLinks.vue";
 const info = ref({
-  version: "0.1.2",
+  version: "0.1.3",
   name: "JamesTurnerDev",
   link: "https://jamesturner.dev/",
   year: new Date().getFullYear(),
