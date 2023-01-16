@@ -1,0 +1,4 @@
+# start of file
+user-agent: *
+disallow: /temp/
+Sitemap: https://front-end.us/sitemap.xml
