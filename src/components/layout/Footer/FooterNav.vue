@@ -10,7 +10,7 @@
       &copy; {{ info.year }}
       <a class="primaryText hover:text-emerald-500" :href="info.link">
         {{ info.name }}
-      </a> - Some rights reserved.
+      </a> - Some rights reserved. &nbsp; Version {{ info.version }} 
     </p>
   </div>
 </template>
@@ -18,6 +18,7 @@
 <script setup>
 import { defineComponent, h, ref } from "vue";
 const info = ref({
+  version: "0.1.2",
   name: "JamesTurnerDev",
   link: "https://jamesturner.dev/",
   year: new Date().getFullYear(),

@@ -1,15 +1,16 @@
-## Front-End.us   : 0.1.1
+## Front-End.us   : 0.1.2
 ##### [https://front-end.us/](https://front-end.us)
 
 ##### Front-End.us is a frontend template that I use to bootstrap my projects.  It is built with the following technologies:
 
-- Vite
-- Vue3
-- TailwindCSS
+- [Vite](https://vitejs.dev/)
+- [Vue3](https://v3.vuejs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [HeadlessUI](https://headlessui.dev/)
 
-I found myself building the same frontend components over and over again. So I decided to build a frontend   template that I can use to bootstrap my projects more efficinently.  I decided to open source it so that others can benefit from it as well.  I hope you enjoy it.
+I found myself building the same frontend components over and over again. So I decided to build a set of frontend Views and components that I can use to bootstrap my projects more efficinently.  I decided to open source it so that others can benefit from it as well.  I hope you enjoy it.
 
-I will be adding more components as I build them.  If you have any suggestions, please feel free to open an issue or submit a pull request.
+I will be adding more components as I build them. In addition to the landing, faq, login, and register pages I usually need an admin section so I think that will be next. If you have any suggestions, please feel free to open an issue or submit a pull request.
 
 ![screenshot](screenshot.webp)
 
@@ -32,8 +33,6 @@ npm run dev
 ```bash
 npm run build
 ```
-
-
 
 ### Todo List
 
