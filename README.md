@@ -34,6 +34,10 @@ npm run dev
 npm run build
 ```
 
+### More Help and information
+There is a question and answer section on the site.  You can also open an issue on the repo.
+[Front-End.us Help](https://front-end.us/page/help)
+
 ### Todo List
 
 - Change out all script to script setup
