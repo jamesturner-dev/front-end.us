@@ -148,6 +148,16 @@ h1:hover {
   color: #1c1c1c !important;
 }
 
+.footerNav{
+  padding: 1.25rem;
+  border-top-width: 1px;
+  border-color: rgb(229 231 235);
+}
+
+.dark .footerNav {
+  border-color: rgb(17 24 39);
+}
+
 .stickySearch {
   position: sticky;
   display: flex;
@@ -257,11 +267,15 @@ h1:hover {
   font-size: .9rem;
   line-height: 1.5rem;
   font-weight: 600;
+    border: 1px solid var(--blu);
 }
 
 .primary:hover {
   background-color: var(--grene);
   color: rgb(255 255 255);
+  border-radius: 0.5rem;
+  border: transparent;
+  border: 1px solid var(--grene);
 }
 
 .primaryText {
@@ -270,7 +284,6 @@ h1:hover {
 
 .secondary {
   display: inline-block;
-  border-radius: 0.5rem;
   border-radius: 0.5rem;
   padding: 5px 1rem;
   font-size: .9rem;
@@ -283,7 +296,7 @@ h1:hover {
 .secondary:hover {
   background-color: var(--grene);
   color: #fff;
-  border: transparent;
+  border: 1px solid var(--grene);
 }
 
 .secondaryText {
@@ -370,6 +383,10 @@ h1:hover {
   padding: .375rem 1rem;
   font-size: 0.875rem;
   line-height: 1.5rem;
+}
+
+.dark .fakeButton {
+  color: var(--light-gray);
 }
 
 .more {

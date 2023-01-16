@@ -2,7 +2,7 @@
 	<div class="mx-auto max-w-3xl pt-10 pb-20">
 		<div class="hidden sm:mb-8 sm:flex sm:justify-center">
 			<div
-				class="fakeButton ring-1 ring-gray-900/10 dark:ring-gray-800 dark:hover:ring-gray-600 hover:ring-gray-900/20">
+				class="fakeButton ring-1 ring-gray-300 dark:ring-gray-800 dark:hover:ring-gray-600 hover:ring-gray-500">
 				<span class="text-gray-600">
 					{{ c.heading }}
 					<a :href="c.link"  class="font-semibold primaryText">
@@ -25,7 +25,7 @@
 				<span class="text-sky-200" aria-hidden="true">&rarr;</span>
 			</a>
 			<a :href="c.secondary.link"
-				class="secondary ring-1 ring-gray-900/10 hover:ring-gray-900/20 dark:ring-gray-800 dark:hover:ring-gray-600 ">
+				class="secondary shadow-sm ring-1 ring-gray-900/10 hover:ring-gray-900/20 dark:ring-gray-800 dark:hover:ring-gray-600 ">
 				{{ c.secondary.text }} {{ ' ' }}
 				<span class="text-gray-400" aria-hidden="true">&rarr;</span>
 			</a>
