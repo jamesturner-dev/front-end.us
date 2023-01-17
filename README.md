@@ -47,6 +47,7 @@ You can also open an issue on the repo.
 - Add tests
 - Add documentation
 - Fix the current page in the menu?
+- 99% or better Lighthouse score ( so close !)
 
 ### License
 Copyright 2023 [James Turner Dev](https://james-turner.dev)
