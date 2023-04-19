@@ -37,7 +37,7 @@
             <dt class="text-lg font-medium leading-6 text-gray-700 mt-5">{{ faq.question }}</dt>
             <dd class="text-base text-gray-500">{{ faq.answer }}</dd>
             <dd v-if="faq.link" class="text-base text-gray-500">
-              <a :href="faq.link" class="text-sky-400 hover:text-emerald-500">Learn more</a>
+              <a :href="faq.link" class="text-sky-400 hover:text-sky-600">Learn more</a>
             </dd>
           </div>
         </dl>

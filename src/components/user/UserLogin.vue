@@ -4,7 +4,7 @@
       <div>
         <h2 class="mt-6 theHeading"> Sign in to your account </h2>
         <p class="more"> Or {{ " " }}
-          <a href="/user/register" class="font-medium text-emerald-400 hover:text-sky-400">
+          <a href="/user/register" class="font-medium text-sky-400 hover:text-sky-400">
             sign up today to get started.
           </a>
         </p>
