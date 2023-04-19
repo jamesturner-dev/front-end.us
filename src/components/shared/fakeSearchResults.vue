@@ -1,30 +1,17 @@
 <template>
-  <ul role="list" id="searchResults" class="divide-y divide-gray-200 dark:divide-gray-800">
-    <li v-for="(d, i) in data" :key="i">
-
-      <div class="theContent">
-
-        <div>
-          
-          <a :href="d.url" class="font-bold primaryText textLink">
-            {{ d.name }}
-          </a>
-
-          <a :href="d.url" class="dark:text-slate-600 text-neutral-600"> Ip Address:
-            <span class="primaryText">{{ d.ip_address }}</span>
-          </a>
-
-          <span class="items-end dark:text-slate-600 text-neutral-600">
-            &nbsp; Created on {{ d.date }}
-            &nbsp; . &nbsp; Rated:
-            <span class="primaryText">{{ d.id }}</span>
-          </span>
-
-        </div>
-
-
-
-      </div>
+  <ul role="list" id="searchResults" class="theContent divide-y divide-gray-200 dark:divide-gray-800">
+    <li v-for="(d, i) in data" :key="i" class="">
+      <a :href="d.url" class="font-bold primaryText textLink">
+        {{ d.name }}
+      </a>
+      <a :href="d.url" class="dark:text-slate-600 text-neutral-600"> Ip Address:
+        <span class="primaryText">{{ d.ip_address }}</span>
+      </a>
+      <span class="items-end dark:text-slate-600 text-neutral-600">
+        &nbsp; Created on {{ d.date }}
+        &nbsp; . &nbsp; Rated:
+        <span class="primaryText">{{ d.id }}</span>
+      </span>
     </li>
   </ul>
 </template>

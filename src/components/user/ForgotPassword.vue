@@ -5,7 +5,8 @@
       <h2 class="theHeading">Forgot your password?</h2>
       <p class="more">
         Enter your email to reset your password or
-        <a href="/user/register" class="text-sky-400">
+        <a href="/user/register" 
+          class="text-sky-400 hover:text-sky-600 dark:hover:text-sky-300">
           sign up if you are a new user.
         </a>
       </p>

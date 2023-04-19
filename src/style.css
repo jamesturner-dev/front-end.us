@@ -89,8 +89,6 @@ h1:hover {
   background-color: var(--dark-gray);
 }
 
-
-
 .mainGrid {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -112,6 +110,15 @@ h1:hover {
   position: relative;
   max-width: 56rem;
   margin-top: 1.25rem;
+}
+
+.theWrapper {
+  display: flex;
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 /* The Footer */
@@ -185,15 +192,6 @@ h1:hover {
   color: var(--light-gray);
   background-color: var(--slate);
   border-color: var(--slate);
-}
-
-.theWrapper {
-  display: flex;
-  min-height: 100%;
-  align-items: center;
-  justify-content: center;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 
 .vue-tags-input {
@@ -308,7 +306,7 @@ h1:hover {
 .theHeading {
   margin-top: 2px;
   text-align: center;
-  font-size: 1.875rem;
+  font-size: 1.5rem;
   line-height: 2.25rem;
   font-weight: 700;
   letter-spacing: -0.025em;
@@ -385,7 +383,6 @@ h1:hover {
 .dark .searchSubmit {
   color: var(--blu) !important;
   background-color: var(--slate);
-
 }
 
 .dark .searchSubmit:hover {

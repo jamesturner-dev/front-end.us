@@ -1,9 +1,9 @@
 <template>
-  <div class="sm:border-l dark:sm:border-slate-700 sm:border-gray-300 sm:pl-6 my-10">
+  <section class="sm:border-l dark:sm:border-slate-700 sm:border-gray-300 sm:pl-6 my-10">
     <h4 class="text-xl font-bold tracking-tight text-gray-600 dark:text-slate-600">
       {{ content.heading }} {{ content.subHeading}}
     </h4>
-  </div>
+  </section>
 </template>
 
 <script setup>

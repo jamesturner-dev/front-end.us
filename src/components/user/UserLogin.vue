@@ -2,9 +2,10 @@
   <div class="theWrapper">
     <div class="w-full max-w-md space-y-8">
       <div>
-        <h2 class="mt-6 theHeading"> Sign in to your account </h2>
+        <h3 class="mt-6 theHeading"> Sign in to your account </h3>
         <p class="more"> Or {{ " " }}
-          <a href="/user/register" class="font-medium text-sky-400 hover:text-sky-400">
+          <a href="/user/register" 
+          class="text-sky-400 hover:text-sky-600 dark:hover:text-sky-300">
             sign up today to get started.
           </a>
         </p>
