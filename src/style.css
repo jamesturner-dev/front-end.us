@@ -89,6 +89,8 @@ h1:hover {
   background-color: var(--dark-gray);
 }
 
+
+
 .mainGrid {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -135,7 +137,7 @@ h1:hover {
   padding-right: 0.5rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  color: var(--mid-gray);
+  color: rgb(71 85 105);
 }
 
 .footerItem:hover {
