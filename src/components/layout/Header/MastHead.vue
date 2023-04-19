@@ -15,7 +15,7 @@
 import { ref } from 'vue';
 const siteInfo = ref(
   {
-    subTitle: "James Turner Dev's",
+    subTitle: "JamesTurnerDev's",
     title: 'Front-End.us',
     url: '/',
     repository: 'https://github.com/jamesturner-dev/front-end.us',

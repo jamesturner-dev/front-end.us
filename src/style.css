@@ -13,13 +13,13 @@
 
 :root {
   --blu: rgb(71, 167, 245);
-  --blu-hover: rgb(14 165 233);
-  --grene: rgb(132, 200, 135);
-  --grene-hover: rgb(114, 200, 118);
+  --blu-hover: rgb(28,161,241);
+  --blu-hover: rgb(132, 200, 135);
   --yeller: #F0DB3A;
   --ernge: #F04022;
-  --darker-gray: rgb(33, 33, 33);
-  --dark-gray: rgb(99, 99, 99);
+  --darker-gray: rgb(17, 23, 32);
+  --dark-gray: rgb(24, 31, 44);
+  --slate: rgb(39,51,63);
   --mid-gray: rgb(138, 138, 138);
   --light-gray: rgb(166, 166, 166);
   --lighter-gray: rgb(199, 199, 199);
@@ -31,7 +31,7 @@ body {
 }
 
 .dark body {
-  background-color: rgb(9, 9, 9);
+  background-color: var(--darker-gray);
 }
 
 a.link {
@@ -86,7 +86,7 @@ h1:hover {
 }
 
 .dark .theContainer {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--dark-gray);
 }
 
 .mainGrid {
@@ -118,7 +118,7 @@ h1:hover {
 }
 
 .dark .footerContain {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--dark-gray);
 }
 
 .footerItem {
@@ -158,36 +158,7 @@ h1:hover {
   border-color: rgb(17 24 39);
 }
 
-.stickySearch {
-  position: sticky;
-  display: flex;
-  height: 4rem;
-  top: 0;
-  z-index: 10;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 56rem;
-  background-color: rgb(255 255 255);
-}
 
-.dark .stickySearch {
-  background-color: rgb(0, 0, 0);
-}
-
-#searchInput {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  padding: 0.5rem .75rem 0.5rem 2rem;
-  color: rgb(17 24 39);
-  border-color: transparent;
-  background-color: rgb(255 255 255);
-}
-
-.dark #searchInput {
-  color: rgb(75 85 99);
-  background-color: rgb(0, 0, 0);
-}
 
 .formInput {
   display: block;
@@ -203,8 +174,8 @@ h1:hover {
 
 .dark .formInput {
   color: var(--light-gray);
-  background-color: rgb(0, 0, 0);
-  border-color: #1c1c1c;
+  background-color: var(--slate);
+  border-color: var(--slate);
 }
 
 .theWrapper {
@@ -226,7 +197,7 @@ h1:hover {
   line-height: 1;
   font-weight: 700;
   letter-spacing: -0.025em;
-  color: var(--grene);
+  color: var(--blu-hover);
 }
 
 .bigButton {
@@ -254,7 +225,7 @@ h1:hover {
 
 .smallButton:hover {
   color: rgb(255, 255, 255);
-  background-color: var(--grene);
+  background-color: var(--blu-hover);
 }
 
 .primary {
@@ -271,11 +242,11 @@ h1:hover {
 }
 
 .primary:hover {
-  background-color: var(--grene);
+  background-color: var(--blu-hover);
   color: rgb(255 255 255);
   border-radius: 0.5rem;
   border: transparent;
-  border: 1px solid var(--grene);
+  border: 1px solid var(--blu-hover);
 }
 
 .primaryText {
@@ -294,9 +265,9 @@ h1:hover {
 }
 
 .secondary:hover {
-  background-color: var(--grene);
+  background-color: var(--blu-hover);
   color: #fff;
-  border: 1px solid var(--grene);
+  border: 1px solid var(--blu-hover);
 }
 
 .secondaryText {
@@ -351,7 +322,40 @@ h1:hover {
 }
 
 .dark .toggleSwitch {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--slate);
+}
+
+/* Search Header and Search Results */
+
+.stickySearch {
+  position: sticky;
+  display: flex;
+  height: 4rem;
+  top: 0;
+  z-index: 10;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 56rem;
+  background-color: rgb(255 255 255);
+}
+
+.dark .stickySearch {
+  background-color: var(--dark-gray);
+}
+
+#searchInput {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 0.5rem .75rem 0.5rem 2rem;
+  color: rgb(17 24 39);
+  border-color: transparent;
+  background-color: rgb(255 255 255);
+}
+
+.dark #searchInput {
+  color: var(--light-gray);
+  background-color: var(--dark-gray);
 }
 
 .searchSubmit {
@@ -368,12 +372,13 @@ h1:hover {
 
 .dark .searchSubmit {
   color: var(--blu) !important;
-  background-color: rgb(17 24 39);
+  background-color: var(--slate);
+
 }
 
 .dark .searchSubmit:hover {
-  color: var(--grene) !important;
-  background-color: rgb(22, 22, 22);
+  color: var(--darker-gray) !important;
+  background-color: var(--blu);
 }
 
 .fakeButton {
