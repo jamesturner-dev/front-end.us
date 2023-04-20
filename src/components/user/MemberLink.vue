@@ -2,7 +2,7 @@
   <div class="flex items-center justify-between">
     <div class="flex items-center"></div>
     <div v-if="!login" class="text-sm">
-      <a href="/user/login" class="text-sky-400 hover:text-sky-600 dark:hover:text-sky-300">
+      <a href="/user/login" class="text-sky-500 hover:text-sky-600 dark:hover:text-sky-300">
         Already a Member?
       </a>
     </div>

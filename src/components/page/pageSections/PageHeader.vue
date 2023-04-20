@@ -2,7 +2,6 @@
   <h3 class="block text-center">
     {{ content.subHeading }}
   </h3>
-
   <h2 class="block text-center">
     {{ content.heading }}
   </h2>
