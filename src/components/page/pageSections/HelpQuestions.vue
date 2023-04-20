@@ -1,10 +1,9 @@
 <template>
   <div class="w-full">
-    <div class="mx-auto w-full max-w-lg rounded-2xl my-10 p-2">
-
+    <div class="mx-auto max-w-xl rounded-2xl my-10 p-2">
       <Disclosure v-slot="{ open }" v-for="h in help" :key="h.id">
         <DisclosureButton
-          class="flex w-full justify-between rounded-lg bg-sky-400 text-white dark:bg-gray-900 dark:text-sky-800 dark:hover:text-black mb-1 px-4 py-2 text-left text-sm font-medium hover:bg-emerald-400 dark:hover:bg-sky-900">
+          class="disclosureButton">
           <span> {{ h.question }} </span>
           <ChevronUpIcon :class="open ? 'rotate-180 transform' : ''"
             class="h-5 w-5 text-sky-700" />

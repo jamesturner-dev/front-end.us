@@ -1,12 +1,10 @@
 <template>
- <h1>
-    <span class="mt-5 block text-center text-sm font-semibold primaryText">
-      {{ content.subHeading }}
-    </span>
-    <span class="mb-2 block text-center text-2xl font-bold leading-8 tracking-tight text-slate-600">
-      {{ content.heading }}
-    </span>
-  </h1>
+  <h3 class="block text-center">
+    {{ content.subHeading }}
+  </h3>
+  <h2 class="block text-center">
+    {{ content.heading }}
+  </h2>
 </template>
 
 <script setup>

@@ -15,7 +15,7 @@
 const cat = [
   { name: "Technology", href: "https://headlin3s.com/cat/Tech" },
   { name: "The News", href: "https://headlin3s.com/cat/News" },
-  { name: "Online Video", href: "https://linkz.network/tag/video" },
-  { name: "Software", href: "https://linkz.network/cat/software" },
+  { name: "Politics", href: "https://headlin3s.com/cat/politics" },
+  { name: "Business", href: "https://headlin3s.com/cat/business" },
 ];
 </script> 
