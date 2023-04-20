@@ -2,66 +2,18 @@
   <div class="flex min-h-full items-center justify-center px-5">
     <div class="w-full max-w-md space-y-5">
 
-      <h2 class="theHeading">Forgot your password?</h2>
-      <p class="more">
-        Enter your email to reset your password or
-        <a href="/user/register" 
-          class="text-sky-400 hover:text-sky-600 dark:hover:text-sky-300">
-          sign up if you are a new user.
-        </a>
-      </p>
-
-      <form @submit.prevent="" class="mt-8 space-y-3">
-        <div class="-space-y-px rounded-md shadow-sm">
-          <label for="email-address" class="sr-only">Email address</label>
-          <input id="email-address" v-model="email" name="email" type="email" autocomplete="email" required=""
-            class="formInput focus:z-10 focus:border-sky-500"
-            placeholder="Email address" />
-        </div>
-        <button @click="login" type="submit" class="primary w-full" aria-label="Sign In">
-          Sign in
-        </button>
-      </form>
-
+      <PageHeader :content="content" />
+      <ForgotPasswordForm />
+     
     </div>
   </div>
 </template>
 
-<script>
-// export default {
-//   data: function () {
-//     return {
-//       errors: [],
-//       email: "",
-//       password: "",
-//       token: "",
-//     };
-//   },
-
-//   methods: {
-//     async login() {
-//       const requestOptions = {
-//         method: "POST",
-//         headers: { "Content-Type": "application/json" },
-//         body: JSON.stringify({
-//           email: this.email,
-//           password: this.password,
-//         }),
-//       };
-
-//       const response = await fetch(
-//         "http://localhost:5000/api/v1/auth/forgotpassword",
-//         requestOptions
-//       );
-
-//       const data = await response.json();
-//       this.token = data.token;
-//       console.log(this.token);
-//       // localStorage.setItem("token", this.token);
-//       if (this.token) {
-//         this.$router.push({ name: "home" });
-//       }
-//     },
-//   },
-// };
+<script setup>
+import PageHeader from '../page/pageSections/PageHeader.vue';
+import ForgotPasswordForm from './userForms/ForgotPasswordForm.vue';
+const content = {
+  heading: "Forgot  Password",
+  subHeading: "Enter your email to reset your password"
+}
 </script>

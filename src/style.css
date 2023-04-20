@@ -19,7 +19,9 @@
   --ernge: #F04022;
   --darker-gray: rgb(17, 23, 32);
   --dark-gray: rgb(24, 31, 44);
+  --midSlate: #475569;
   --slate: rgb(39,51,63);
+  --lightSlate: #64748b;
   --mid-gray: rgb(138, 138, 138);
   --light-gray: rgb(166, 166, 166);
   --lighter-gray: rgb(199, 199, 199);
@@ -61,7 +63,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  color: var(--darker-gray);
+  color: var(--midSlate);
   line-height: 2rem;
   letter-spacing: -0.025em;
 }
@@ -77,6 +79,13 @@ h6 {
 
 h1:hover {
   color: var(--blu);
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: -0.025em;
+  color: var(--midSlate);
 }
 
 .theContainer {
@@ -257,7 +266,7 @@ h1:hover {
 }
 
 .primaryText {
-  color: var(--slate) !important;
+  color: var(--midSlate) !important;
 }
 
 .secondary {
