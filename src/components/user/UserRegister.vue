@@ -46,7 +46,7 @@
 
 <script>
 import MemberLink from "./MemberLink.vue";
-import PageHeader from "../page/PageHeader.vue";
+import PageHeader from "../page/pageSections/PageHeader.vue";
 
 
 export default {
