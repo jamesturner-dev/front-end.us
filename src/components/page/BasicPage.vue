@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto pt-5">
+  <div class="container pt-5">
     <ContentHeader :content="content" />
     <div class="flex flex-row flex-wrap">
       <BasicContent />

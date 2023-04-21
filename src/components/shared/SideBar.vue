@@ -7,9 +7,8 @@
           <h3 class="flex-auto truncate text-sm font-semibold leading-6">
             <a :href="item.url" class="primaryText">{{ item.user.name }}</a>
           </h3>
-          <time :datetime="item.dateTime" class="flex-none text-xs text-neutral-500">{{ item.date }}</time>
         </div>
-        <p class="mt-3 truncate text-sm text-neutral-500">
+        <p class="mt-1 truncate text-xs text-neutral-500">
           {{ item.projectName }}
         </p>
       </li>
@@ -21,12 +20,12 @@
 const activityItems = [
   {
     user: {
-      name: 'Outside of the Walled Garden',
+      name: 'Outside Walled Gardens',
       imageUrl: 'https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHdlYnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60',
     },
     date: '2023-04-18',
     projectName: 'Independent Development is the Future of Software',
-    url: '/blog/walled-garden',
+    url: 'https://jamesturner.dev/blog/walled-garden',
   },
   {
     user: {
@@ -35,7 +34,7 @@ const activityItems = [
     },
     projectName: 'Why do you focus so much on website speed? ',
     date: '2023-01-23',
-    url: '/blog/fast-websites',
+    url: 'https://jamesturner.dev/blog/fast-websites',
   },
   {
     user: {
@@ -45,7 +44,7 @@ const activityItems = [
     },
     projectName: 'Why VueJs is my preferred framework.',
     date: '2023-01-23',
-    url: '/blog/why-vue',
+    url: 'https://jamesturner.dev/blog/why-vue',
   },
   {
     user: {
@@ -54,7 +53,7 @@ const activityItems = [
     },
     projectName: 'Python Podcasts that I have enjoyed.',
     date: '2023-02-22',
-    url: '/blog/python-podcasts',
+    url: 'https://jamesturner.dev/blog/python-podcasts',
   },
   {
     user: {
@@ -63,7 +62,7 @@ const activityItems = [
     },
     date: '2023-03-24',
     projectName: 'There are no small components.  Everything is important',
-    url: '/blog/web-form',
+    url: 'https://jamesturner.dev/blog/web-form',
   },
 ]
 </script>

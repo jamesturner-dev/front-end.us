@@ -13,7 +13,7 @@
 				</span>
 			</div>
 		</div>
-		<h1 class="sm:text-center leading-8"> {{ c.title }} </h1>
+		<h2 class="sm:text-center leading-8 px-5"> {{ c.title }} </h2>
 		<p class="mt-6 text-lg leading-6 text-gray-600 sm:text-center">
 			{{ c.description }}
 		</p>
