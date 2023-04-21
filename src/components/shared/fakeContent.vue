@@ -1,5 +1,5 @@
 <template>
-	<div class="mx-auto max-w-3xl pt-10 pb-20">
+	<div class="mx-auto max-w-3xl pt-10 pb-20 mt-10">
 		<div class="hidden sm:mb-8 sm:flex sm:justify-center">
 			<div
 				class="fakeButton ring-1 ring-gray-300 dark:ring-gray-800 dark:hover:ring-gray-600 hover:ring-gray-500">

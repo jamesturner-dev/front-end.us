@@ -1,7 +1,7 @@
 <template>
-  <div class="mt-5 ">
+  <section>
     <FakeContent />
-  </div>
+  </section>
 </template>
 
 <script setup>

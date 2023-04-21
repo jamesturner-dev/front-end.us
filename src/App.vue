@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-full">
     <SearchForm />
-    <main class="mainContain theContainer">
+    <main class="theContainer">
       <Header />
       <router-view :key="$route.fullPath" />
     </main>
