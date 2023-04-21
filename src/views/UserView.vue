@@ -1,5 +1,5 @@
 <template>
-  <div class="mainFlex">
+  <div class="userWrapper">
     <div class="w-full max-w-md space-y-4">
       <section v-if="pageName == 'login'">
         <UserLogin />
