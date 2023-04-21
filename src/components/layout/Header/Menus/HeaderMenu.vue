@@ -20,9 +20,10 @@ const isCurrent = (c) => {
 
 const tabs = [
   { name: "Home", href: "/", current: isCurrent("/") },
-  { name: "About", href: "/page/about", current: isCurrent("Page") },
+  { name: "About", href: "/page/about", current: isCurrent("/page/about") },
   { name: "Help", href: "/page/help", current: isCurrent("/page/help") },
-  { name: "Register", href: "/user/register", current: isCurrent("/page/help") },
-  { name: "Login", href: "/user/login", current: isCurrent("/page/help") },
+  { name: "Basic", href: "/page/basic", current: isCurrent("/page/basic") },
+  { name: "Register", href: "/user/register", current: isCurrent("/user/register") },
+  { name: "Login", href: "/user/login", current: isCurrent("/user/login") },
 ];
 </script>

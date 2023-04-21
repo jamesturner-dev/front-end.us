@@ -6,6 +6,9 @@
     <div v-if="pageRoute == 'about'">
       <AboutPage />
     </div>
+    <div v-if="pageRoute == 'basic'">
+      <BasicPage />
+    </div>
   </section>
 </template>
 
@@ -13,6 +16,7 @@
 import { useRoute } from "vue-router";
 import AboutPage from "../components/page/AboutPage.vue";
 import HelpPage from "../components/page/HelpPage.vue";
+import BasicPage from "../components/page/BasicPage.vue";
 const route = useRoute();
 const pageRoute = route.params.name; 
 </script>

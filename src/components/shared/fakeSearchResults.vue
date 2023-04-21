@@ -1,10 +1,10 @@
 <template>
   <ul role="list" id="searchResults" class="theContent divide-y divide-gray-200 dark:divide-gray-800">
     <li v-for="(d, i) in data" :key="i" class="">
-      <a :href="d.url" class="font-bold primaryText textLink">
+      <a :href="d.url" class="font-bold">
         {{ d.name }}
       </a>
-      <a :href="d.url" class="dark:text-slate-600 text-neutral-600"> Ip Address:
+      <a :href="d.url" class=""> ip Address:
         <span class="primaryText">{{ d.ip_address }}</span>
       </a>
       <span class="items-end dark:text-slate-600 text-neutral-600">

@@ -1,5 +1,5 @@
 <template>
-	<div class="mx-auto max-w-3xl pt-10 pb-20">
+	<div class="mx-auto max-w-3xl pt-10 pb-20 mt-10">
 		<div class="hidden sm:mb-8 sm:flex sm:justify-center">
 			<div
 				class="fakeButton ring-1 ring-gray-300 dark:ring-gray-800 dark:hover:ring-gray-600 hover:ring-gray-500">
@@ -13,7 +13,7 @@
 				</span>
 			</div>
 		</div>
-		<h1 class="text-3xl sm:text-center leading-8"> {{ c.title }} </h1>
+		<h2 class="sm:text-center leading-8 px-5"> {{ c.title }} </h2>
 		<p class="mt-6 text-lg leading-6 text-gray-600 sm:text-center">
 			{{ c.description }}
 		</p>

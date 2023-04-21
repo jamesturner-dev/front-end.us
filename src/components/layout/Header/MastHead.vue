@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1 class="text-lg -mb-2 mt-1">
-      <a :href="siteInfo.url" class="subTitle">
+    <h1 class="text-xl -mb-2 mt-1">
+      <a :href="siteInfo.url">
         {{ siteInfo.subTitle }}&nbsp;{{ siteInfo.title }}
       </a>
     </h1>

@@ -8,7 +8,6 @@
 <script setup>
 import HelpQuestions from './pageSections/HelpQuestions.vue';
 import PageHeader from './pageSections/PageHeader.vue';
-
 const content = {
   heading:  "Click on the question to reveal the answer", 
   subHeading: "Front-End.us Q & A"
