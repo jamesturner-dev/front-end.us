@@ -10,7 +10,7 @@
 <script setup>
 import { ref } from "vue";
 const info = ref({
-  version: "0.1.5",
+  version: "0.1.6",
   name: "JamesTurnerDev",
   link: "https://jamesturner.dev/",
   year: new Date().getFullYear(),

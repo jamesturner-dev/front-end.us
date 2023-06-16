@@ -1,6 +1,6 @@
 <template>
-  <div class="userWrapper">
-    <div class="w-full max-w-md space-y-4">
+  <div class="wrapper">
+    <div class="w-full max-w-md space-y-4 my-10">
       <section v-if="pageName == 'login'">
         <UserLogin />
       </section>

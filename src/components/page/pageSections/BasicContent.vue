@@ -1,6 +1,6 @@
 <template>
   <main role="main" class="w-full sm:w-2/3 md:w-3/4 pr-10">
-    <div class="theContainer">
+    <div class="container">
       <p v-for="content in theContent" :key="content" class="mb-5 pr-5">
         {{ content }}
       </p>

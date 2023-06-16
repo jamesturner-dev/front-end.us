@@ -2,7 +2,7 @@
   <aside class="w-full sm:w-1/3 md:w-1/4 sticky top-0">
     <ul role="list" class="divide-y dark:divide-slate-600 divide-slate-200">
       <li v-for="item in activityItems" :key="item.commit" class="py-4">
-        <div class="flex items-center gap-x-3">
+        <div class="flex items-center gap-x-2">
           <img :src="item.user.imageUrl" alt="" class="avatar smallerAvatar" />
           <h3 class="flex-auto truncate text-sm font-semibold leading-6">
             <a :href="item.url" class="primaryText">{{ item.user.name }}</a>

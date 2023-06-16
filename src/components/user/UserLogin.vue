@@ -1,5 +1,5 @@
 <template>
-  <section class="theWrapper">
+  <section class="wrapper">
     <div>
       <PageHeader :content="content" />
       <UserLoginForm />

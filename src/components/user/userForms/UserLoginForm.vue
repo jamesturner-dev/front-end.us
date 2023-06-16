@@ -1,6 +1,7 @@
 <template>
   <form @submit.prevent="" class=" mt-8 space-y-6">
     <input type="hidden" name="remember" value="true" />
+    
     <div class="-space-y-px rounded-md shadow-sm">
       <div>
         <label for="email-address" class="sr-only">Email address</label>
@@ -21,13 +22,12 @@
       <MemberLink :login=true />
     </div>
 
-    <div>
-      <button @click="login" type="submit" class="primary w-full" aria-label="Login">
-        <span class="absolute inset-y-0 left-0 flex items-center pl-3">
-        </span>
-        Sign in
-      </button>
-    </div>
+    <button @click="login" type="submit" class="primary w-full" aria-label="Login">
+      <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+      </span>
+      Sign in
+    </button>
+
   </form>
 </template>
 

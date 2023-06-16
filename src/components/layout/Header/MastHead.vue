@@ -2,7 +2,7 @@
   <div>
     <h1 class="text-xl -mb-2 mt-1">
       <a :href="siteInfo.url">
-        {{ siteInfo.subTitle }}&nbsp;{{ siteInfo.title }}
+        {{ siteInfo.title }}
       </a>
     </h1>
     <a class="grayLink" :href="siteInfo.repository">
@@ -15,7 +15,7 @@
 import { ref } from 'vue';
 const siteInfo = ref(
   {
-    subTitle: "JamesTurnerDev's",
+    subTitle: "",
     title: 'Front-End.us',
     url: '/',
     repository: 'https://github.com/jamesturner-dev/front-end.us',
