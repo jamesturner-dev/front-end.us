@@ -8,11 +8,7 @@
 - [TailwindCSS](https://tailwindcss.com/)
 - [HeadlessUI](https://headlessui.dev/)
 
-I found myself building the same frontend components over and over again. I need a VueJS front-end with tailwind, dark mode, local fonts, etc. So I decided to build a template of frontend Views and components that I can use to bootstrap my projects more efficinently.  I decided to open source in case others can benefit from it as well.  
-
-I will be adding more components as I build them. In addition to the landing, faq, login, and register pages I usually need an admin section so I think that will be next. If you have any suggestions, please feel free to open an issue or submit a pull request.
-
-**v 0.1.5 adds many fixes and a generic basic page template.**  
+I found myself building the same frontend components over and over again. I need a VueJS front-end with tailwind, dark mode, local fonts, etc. So I decided to build a template of frontend Views and components that I can use to bootstrap my projects more efficinently.  I decided to open source in case others can benefit from it as well.  I will be adding to it as I go along.  Feel free to fork it and use it for your own projects.
 
 ![screenshot](screenshot.webp)
 
@@ -50,7 +46,10 @@ You can also open an issue on the repo.
 - Add documentation
 - Fix the current page in the menu?
 - ~~99% or better Lighthouse score ( so close !)~~
+- ~~Add a dark mode toggle~~
+- ~~Add lighthouse stats to front page~~
+- ~~Add contributors to front page~~
 
 ### License
-Copyright 2023 [James Turner Dev](https://james-turner.dev)
+Copyright 2023 [Tr1pwyr](https://tr1pwyr.com)
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details

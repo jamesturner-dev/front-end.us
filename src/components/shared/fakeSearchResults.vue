@@ -44,3 +44,23 @@ const data = [
   { "id": 24, "ip_address": "201.226.117.93", "name": "Bytecard", "url": "https://nytimes.com/nec/dui/luctus/rutrum/nulla/tellus/in.html?at=donec&turpis=odio&donec=justo&posuere=sollicitudin&metus=ut&vitae=suscipit&ipsum=a&aliquam=feugiat&non=et&mauris=eros&morbi=vestibulum&non=ac&lectus=est&aliquam=lacinia&sit=nisi&amet=venenatis&diam=tristique", "date": "3/17/2023" }
 ]
 </script>
+
+<style scoped>
+#searchResults {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-radius: 0.375rem;
+  border-width: 1px;
+  border-color: rgb(229 231 235);
+  padding: 1rem 1.5rem 1rem 1.5rem;
+}
+
+.dark #searchResults {
+  border-color: var(--slate);
+}
+
+ul#searchResults li {
+  padding: 1rem 0;
+}
+
+</style>

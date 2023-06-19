@@ -13,7 +13,7 @@ import { defineComponent, h } from "vue";
 const social = [
   {
     name: "Twitter",
-    href: "https://twitter.com/JamesTurnerDev",
+    href: "https://twitter.com/tr1pwyr",
     icon: defineComponent({
       render: () =>
         h("svg", { fill: "currentColor", viewBox: "0 0 24 24" }, [
@@ -25,7 +25,7 @@ const social = [
   },
   {
     name: "GitHub",
-    href: "https://github.com/jamesturner-dev/",
+    href: "https://github.com/tr1pwyr/",
     icon: defineComponent({
       render: () =>
         h("svg", { fill: "currentColor", viewBox: "0 0 24 24" }, [

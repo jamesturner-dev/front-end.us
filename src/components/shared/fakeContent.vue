@@ -1,11 +1,10 @@
 <template>
 	<div class="mx-auto max-w-3xl pt-10 pb-20 mt-10">
 		<div class="hidden sm:mb-8 sm:flex sm:justify-center">
-			<div
-				class="fakeButton ring-1 ring-gray-300 dark:ring-gray-800 dark:hover:ring-gray-600 hover:ring-gray-500">
+			<div class="fakeButton ring-1 ring-gray-300 dark:ring-gray-800 dark:hover:ring-gray-600 hover:ring-gray-500">
 				<span class="text-gray-600">
 					{{ c.heading }}
-					<a :href="c.link"  class="font-semibold primaryText">
+					<a :href="c.link" class="font-semibold primaryText">
 						<span class="absolute inset-0" aria-hidden="true" />
 						Read more <span aria-hidden="true">&rarr;
 						</span>
@@ -18,9 +17,7 @@
 			{{ c.description }}
 		</p>
 		<div class="mt-8 flex gap-x-4 sm:justify-center">
-			<a :href="c.primary.link" 
-				target="_blank"
-				class="primary shadow-sm ring-1 ring-sky-500 hover:ring-emerald-500">
+			<a :href="c.primary.link" target="_blank" class="primary">
 				{{ c.primary.text }} {{ ' ' }}
 				<span class="text-sky-200" aria-hidden="true">&rarr;</span>
 			</a>
@@ -50,6 +47,20 @@ const c = ref(
 			link: '/page/about',
 		}
 	}
-
 )
 </script>
+
+<style scoped>
+.fakeButton {
+  position: relative;
+  overflow: hidden;
+  border-radius: 9999px;
+  padding: .375rem 1rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+.dark .fakeButton {
+  color: var(--light-gray);
+}
+</style>
